@@ -1,0 +1,11 @@
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\BUS.dll
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\BUS.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\DAO.dll
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\DTO.dll
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\DAO.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\bin\Debug\DTO.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.dll
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.pdb

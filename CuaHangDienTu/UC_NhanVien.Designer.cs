@@ -49,12 +49,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.dgvNhanVien = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbbChucVu = new System.Windows.Forms.ComboBox();
             this.txtsdt = new System.Windows.Forms.TextBox();
@@ -72,6 +66,12 @@
             this.txtmanv = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -168,7 +168,7 @@
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
             this.TenNV,
-            this.ChucVu,
+            this.TenQuyen,
             this.NgaySinh,
             this.GioiTinh,
             this.SDT});
@@ -202,54 +202,6 @@
             this.dgvNhanVien.TabIndex = 50;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
-            // MaNV
-            // 
-            this.MaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã ";
-            this.MaNV.MinimumWidth = 6;
-            this.MaNV.Name = "MaNV";
-            // 
-            // TenNV
-            // 
-            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên ";
-            this.TenNV.MinimumWidth = 6;
-            this.TenNV.Name = "TenNV";
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ChucVu.DataPropertyName = "ChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
-            this.ChucVu.MinimumWidth = 6;
-            this.ChucVu.Name = "ChucVu";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.MinimumWidth = 6;
-            this.NgaySinh.Name = "NgaySinh";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // SDT
-            // 
-            this.SDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "SDT";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -276,9 +228,6 @@
             // cbbChucVu
             // 
             this.cbbChucVu.FormattingEnabled = true;
-            this.cbbChucVu.Items.AddRange(new object[] {
-            "Admin",
-            "Nhân viên bán hàng"});
             this.cbbChucVu.Location = new System.Drawing.Point(169, 75);
             this.cbbChucVu.Name = "cbbChucVu";
             this.cbbChucVu.Size = new System.Drawing.Size(219, 24);
@@ -553,9 +502,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(64, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 82;
-            this.label3.Text = "Chức vụ:";
+            this.label3.Text = "Quyền:";
             // 
             // txtmanv
             // 
@@ -579,6 +528,54 @@
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this.panel1;
             // 
+            // MaNV
+            // 
+            this.MaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã ";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            // 
+            // TenNV
+            // 
+            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên ";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            // 
+            // TenQuyen
+            // 
+            this.TenQuyen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenQuyen.DataPropertyName = "TenQuyen";
+            this.TenQuyen.HeaderText = "Quyền";
+            this.TenQuyen.MinimumWidth = 6;
+            this.TenQuyen.Name = "TenQuyen";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.MinimumWidth = 6;
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // SDT
+            // 
+            this.SDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SDT";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
             // UC_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -600,12 +597,6 @@
         #endregion
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvNhanVien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtsdt;
         private System.Windows.Forms.Label label9;
@@ -623,5 +614,11 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.ComboBox cbbChucVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenQuyen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
     }
 }

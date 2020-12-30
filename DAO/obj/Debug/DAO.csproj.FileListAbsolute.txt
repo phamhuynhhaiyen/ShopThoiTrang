@@ -1,0 +1,9 @@
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\bin\Debug\DAO.dll
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\bin\Debug\DAO.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\bin\Debug\DTO.dll
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\bin\Debug\DTO.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\obj\Debug\DAO.dll
+C:\Users\hp\Desktop\ShopThoiTrang\DAO\obj\Debug\DAO.pdb
