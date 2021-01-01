@@ -30,11 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnCenter = new System.Windows.Forms.Panel();
-            this.lbKiemtra = new System.Windows.Forms.Label();
-            this.lbLapPhieu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbLapHoaDon = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
@@ -48,37 +45,10 @@
             this.pnCenter.Size = new System.Drawing.Size(898, 537);
             this.pnCenter.TabIndex = 45;
             // 
-            // lbKiemtra
-            // 
-            this.lbKiemtra.AutoSize = true;
-            this.lbKiemtra.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbKiemtra.ForeColor = System.Drawing.Color.Black;
-            this.lbKiemtra.Location = new System.Drawing.Point(720, 23);
-            this.lbKiemtra.Name = "lbKiemtra";
-            this.lbKiemtra.Size = new System.Drawing.Size(146, 19);
-            this.lbKiemtra.TabIndex = 49;
-            this.lbKiemtra.Text = "Kiểm tra bảo hành";
-            this.lbKiemtra.Click += new System.EventHandler(this.lbKiemtra_Click);
-            // 
-            // lbLapPhieu
-            // 
-            this.lbLapPhieu.AutoSize = true;
-            this.lbLapPhieu.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLapPhieu.ForeColor = System.Drawing.Color.Black;
-            this.lbLapPhieu.Location = new System.Drawing.Point(501, 23);
-            this.lbLapPhieu.Name = "lbLapPhieu";
-            this.lbLapPhieu.Size = new System.Drawing.Size(153, 19);
-            this.lbLapPhieu.TabIndex = 48;
-            this.lbLapPhieu.Text = "Lập phiếu bảo hành";
-            this.lbLapPhieu.Click += new System.EventHandler(this.lbLapPhieu_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lbKiemtra);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lbLapPhieu);
-            this.panel1.Controls.Add(this.lbLapHoaDon);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 58);
@@ -94,18 +64,6 @@
             this.label1.Size = new System.Drawing.Size(100, 41);
             this.label1.TabIndex = 46;
             this.label1.Text = "Order";
-            // 
-            // lbLapHoaDon
-            // 
-            this.lbLapHoaDon.AutoSize = true;
-            this.lbLapHoaDon.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLapHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.lbLapHoaDon.Location = new System.Drawing.Point(310, 23);
-            this.lbLapHoaDon.Name = "lbLapHoaDon";
-            this.lbLapHoaDon.Size = new System.Drawing.Size(101, 19);
-            this.lbLapHoaDon.TabIndex = 47;
-            this.lbLapHoaDon.Text = "Lập hóa đơn";
-            this.lbLapHoaDon.Click += new System.EventHandler(this.lbLapHoaDon_Click);
             // 
             // bunifuElipse1
             // 
@@ -134,11 +92,8 @@
 
         #endregion
         private System.Windows.Forms.Panel pnCenter;
-        private System.Windows.Forms.Label lbLapPhieu;
-        private System.Windows.Forms.Label lbKiemtra;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbLapHoaDon;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }

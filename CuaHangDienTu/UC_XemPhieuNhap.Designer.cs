@@ -42,18 +42,18 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.dgvHD = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.MaPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.txttimkiem = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txttimkiem = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.MaPhieuNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,7 +76,7 @@
             this.dgvHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaPN,
+            this.MaPhieuNhap,
             this.TenNV,
             this.NgayLap,
             this.TongTien});
@@ -110,40 +110,6 @@
             this.dgvHD.TabIndex = 121;
             this.dgvHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHD_CellClick);
             // 
-            // MaPN
-            // 
-            this.MaPN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.MaPN.DataPropertyName = "MaPN";
-            this.MaPN.HeaderText = "Mã phiếu nhập";
-            this.MaPN.MinimumWidth = 6;
-            this.MaPN.Name = "MaPN";
-            this.MaPN.Width = 125;
-            // 
-            // TenNV
-            // 
-            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Người lập";
-            this.TenNV.MinimumWidth = 6;
-            this.TenNV.Name = "TenNV";
-            // 
-            // NgayLap
-            // 
-            this.NgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayLap.DataPropertyName = "NgayLap";
-            this.NgayLap.HeaderText = "Ngày lập";
-            this.NgayLap.MinimumWidth = 6;
-            this.NgayLap.Name = "NgayLap";
-            // 
-            // TongTien
-            // 
-            this.TongTien.DataPropertyName = "TongTien";
-            this.TongTien.HeaderText = "Tổng tiền";
-            this.TongTien.MinimumWidth = 6;
-            this.TongTien.Name = "TongTien";
-            this.TongTien.ReadOnly = true;
-            this.TongTien.Width = 125;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -157,43 +123,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 138);
             this.panel1.TabIndex = 122;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(287, 18);
-            this.label3.TabIndex = 53;
-            this.label3.Text = "và tối giản con đường đến sự hoàn hảo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.label2.Location = new System.Drawing.Point(21, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 18);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "Làm cho mọi chi tiết trở nên hoàn hảo ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.label1.Location = new System.Drawing.Point(18, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 32);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Bring the best for your choices";
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this.panel1;
             // 
             // pictureBox1
             // 
@@ -267,6 +196,16 @@
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHuy.TextMarginLeft = 0;
             this.btnHuy.UseDefaultRadiusAndThickness = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(287, 18);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "và tối giản con đường đến sự hoàn hảo";
             // 
             // txttimkiem
             // 
@@ -342,6 +281,67 @@
             this.txttimkiem.WordWrap = true;
             this.txttimkiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttimkiem_KeyDown);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label2.Location = new System.Drawing.Point(21, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(282, 18);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Làm cho mọi chi tiết trở nên hoàn hảo ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label1.Location = new System.Drawing.Point(18, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(436, 32);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Bring the best for your choices";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this.panel1;
+            // 
+            // MaPhieuNhap
+            // 
+            this.MaPhieuNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.MaPhieuNhap.DataPropertyName = "MaPhieuNhap";
+            this.MaPhieuNhap.HeaderText = "Mã phiếu nhập";
+            this.MaPhieuNhap.MinimumWidth = 6;
+            this.MaPhieuNhap.Name = "MaPhieuNhap";
+            this.MaPhieuNhap.Width = 125;
+            // 
+            // TenNV
+            // 
+            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Người lập";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            // 
+            // NgayLap
+            // 
+            this.NgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayLap.DataPropertyName = "NgayLap";
+            this.NgayLap.HeaderText = "Ngày lập";
+            this.NgayLap.MinimumWidth = 6;
+            this.NgayLap.Name = "NgayLap";
+            // 
+            // TongTien
+            // 
+            this.TongTien.DataPropertyName = "TongTien";
+            this.TongTien.HeaderText = "Tổng tiền";
+            this.TongTien.MinimumWidth = 6;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.ReadOnly = true;
+            this.TongTien.Width = 125;
+            // 
             // UC_XemPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -363,10 +363,6 @@
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvHD;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txttimkiem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaPN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
         private System.Windows.Forms.Label label3;
@@ -374,5 +370,9 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhieuNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
     }
 }

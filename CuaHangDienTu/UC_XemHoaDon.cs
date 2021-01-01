@@ -17,13 +17,10 @@ namespace CuaHangDienTu
         {
             InitializeComponent();
         }
-        public void LoadDuLieu()
-        {
-            
-        }
+        
         private void UC_XemHoaDon_Load(object sender, EventArgs e)
         {
-            LoadDuLieu();
+            dgvHD.DataSource = BUS.HoaDonBUS.GetAllHoaDon();
         }
         
         private void txttimkiem_KeyDown(object sender, KeyEventArgs e)
@@ -35,13 +32,7 @@ namespace CuaHangDienTu
 
         private void dgvHD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvHD.Rows[e.RowIndex];
-                long maHD = long.Parse(row.Cells[0].Value.ToString());
-                Report.Form1 frm = new Report.Form1();
-                frm.Show();
-            }
+            
         }
     }
 }

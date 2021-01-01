@@ -2,18 +2,18 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="CuaHangDienTuDataSet1">
+    <DataSource Name="QLshopthoitrangDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>d1415d85-cbb0-4471-8545-c3f065a80210</rd:DataSourceID>
+      <rd:DataSourceID>3157c265-650c-473e-a7b4-f1b2004b8f43</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DatasetPhieuNhap">
+    <DataSet Name="DataSetPhieuNhap">
       <Query>
-        <DataSourceName>CuaHangDienTuDataSet1</DataSourceName>
+        <DataSourceName>QLshopthoitrangDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -39,8 +39,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>CuaHangDienTuDataSet1</rd:DataSetName>
-        <rd:SchemaPath>E:\Hoc_C#\CuaHangDienTu\CuaHangDienTu\CuaHangDienTuDataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>QLshopthoitrangDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\QLshopthoitrangDataSet.xsd</rd:SchemaPath>
         <rd:TableName>CTPN</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -71,8 +71,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox24</rd:DefaultName>
-            <Top>0.73944in</Top>
-            <Left>1.72681in</Left>
+            <Top>0.52694in</Top>
+            <Left>1.43097in</Left>
             <Height>0.34167in</Height>
             <Width>1.38333in</Width>
             <Style>
@@ -102,8 +102,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>1.54778in</Top>
-            <Left>0.38792in</Left>
+            <Top>1.33528in</Top>
+            <Left>0.34208in</Left>
             <Height>0.25in</Height>
             <Width>1.28333in</Width>
             <ZIndex>1</ZIndex>
@@ -134,8 +134,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>1.93722in</Top>
-            <Left>0.38792in</Left>
+            <Top>1.72472in</Top>
+            <Left>0.34208in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
             <ZIndex>2</ZIndex>
@@ -166,8 +166,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>2.34277in</Top>
-            <Left>0.38792in</Left>
+            <Top>2.13027in</Top>
+            <Left>0.34208in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
             <ZIndex>3</ZIndex>
@@ -199,8 +199,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>3.78722in</Top>
-            <Left>0.38792in</Left>
+            <Top>3.57472in</Top>
+            <Left>0.34208in</Left>
             <Height>0.25in</Height>
             <Width>1.02224in</Width>
             <ZIndex>4</ZIndex>
@@ -242,8 +242,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>4.57723in</Top>
-            <Left>0.38792in</Left>
+            <Top>4.36473in</Top>
+            <Left>0.34208in</Left>
             <Height>0.55833in</Height>
             <Width>3.5825in</Width>
             <ZIndex>5</ZIndex>
@@ -274,8 +274,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>1.22278in</Top>
-            <Left>0.38792in</Left>
+            <Top>1.01028in</Top>
+            <Left>0.34208in</Left>
             <Height>0.25in</Height>
             <Width>3.58248in</Width>
             <ZIndex>6</ZIndex>
@@ -306,8 +306,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>2.6739in</Top>
-            <Left>0.38793in</Left>
+            <Top>2.4614in</Top>
+            <Left>0.34209in</Left>
             <Height>0.25in</Height>
             <Width>3.58249in</Width>
             <ZIndex>7</ZIndex>
@@ -338,11 +338,139 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>4.16056in</Top>
-            <Left>0.38793in</Left>
+            <Top>3.94806in</Top>
+            <Left>0.34209in</Left>
             <Height>0.25in</Height>
             <Width>3.58249in</Width>
             <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox26">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>MS Reference Sans Serif</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>1.32972in</Top>
+            <Left>2.64125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.28333in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox27">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>MS Reference Sans Serif</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>1.72472in</Top>
+            <Left>2.64125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.28333in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox28">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>MS Reference Sans Serif</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>2.13027in</Top>
+            <Left>2.64123in</Left>
+            <Height>0.25in</Height>
+            <Width>1.28333in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox30">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>MS Reference Sans Serif</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>3.57472in</Top>
+            <Left>2.64123in</Left>
+            <Height>0.25in</Height>
+            <Width>1.28333in</Width>
+            <ZIndex>12</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -357,13 +485,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.99999in</Width>
+                  <Width>0.69167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.72221in</Width>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.86029in</Width>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -382,7 +510,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Mã sản phẩm</Value>
+                                  <Value>Mã</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -442,7 +570,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Giá nhập</Value>
+                                  <Value>Giá Nhập</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -640,151 +768,23 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>DatasetPhieuNhap</DataSetName>
-            <Top>3.08in</Top>
-            <Left>0.38793in</Left>
+            <DataSetName>DataSetPhieuNhap</DataSetName>
+            <Top>2.86333in</Top>
+            <Left>0.34208in</Left>
             <Height>0.5in</Height>
-            <Width>3.58249in</Width>
-            <ZIndex>9</ZIndex>
+            <Width>3.69167in</Width>
+            <ZIndex>13</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox26">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!MaPN.Value</Value>
-                    <Style>
-                      <FontFamily>MS Reference Sans Serif</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>1.54778in</Top>
-            <Left>2.68709in</Left>
-            <Height>0.25in</Height>
-            <Width>1.28333in</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox27">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!TenNV.Value</Value>
-                    <Style>
-                      <FontFamily>MS Reference Sans Serif</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>1.93722in</Top>
-            <Left>2.68709in</Left>
-            <Height>0.25in</Height>
-            <Width>1.28333in</Width>
-            <ZIndex>11</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox28">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!NgayLap.Value</Value>
-                    <Style>
-                      <FontFamily>MS Reference Sans Serif</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>2.34277in</Top>
-            <Left>2.68707in</Left>
-            <Height>0.25in</Height>
-            <Width>1.28333in</Width>
-            <ZIndex>12</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox30">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!TongTien.Value</Value>
-                    <Style>
-                      <FontFamily>MS Reference Sans Serif</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>3.78722in</Top>
-            <Left>2.68707in</Left>
-            <Height>0.25in</Height>
-            <Width>1.28333in</Width>
-            <ZIndex>13</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>5.46667in</Height>
+        <Height>5.45in</Height>
         <Style />
       </Body>
-      <Width>4.58in</Width>
+      <Width>4.26667in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -794,52 +794,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="MaPN">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="TenNV">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="NgayLap">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="TongTien">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>MaPN</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>TenNV</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>NgayLap</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>TongTien</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>57b176b9-f587-4617-9db1-32180b981776</rd:ReportID>
+  <rd:ReportID>af982fa6-f551-437d-bfa3-9d4d9a4ec1f3</rd:ReportID>
 </Report>

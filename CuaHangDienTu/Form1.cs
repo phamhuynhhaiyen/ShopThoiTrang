@@ -1,5 +1,7 @@
 ﻿
+using BUS;
 using CuaHangDienTu.Properties;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +17,13 @@ namespace CuaHangDienTu
     public partial class Form1 : Form
     {
         bool isCollapsed;
-        public Form1()
+        long MaNhanvien;
+        string TenNV;
+        public Form1(long manv, string tenNV)
         {
             InitializeComponent();
-            
+            this.MaNhanvien = manv;
+            this.TenNV = tenNV;
         }
         public void AddControl(Control c)
         {
@@ -30,9 +35,9 @@ namespace CuaHangDienTu
         }
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            UC_BanHang bh = new UC_BanHang();          
+            UC_BanHang bh = new UC_BanHang(MaNhanvien);          
             AddControl(bh);
-            //UC_LapHoaDon lapHoaDon = new UC_LapHoaDon(manhanvien);
+            UC_LapHoaDon lapHoaDon = new UC_LapHoaDon(MaNhanvien);
             
         }
 
@@ -171,10 +176,18 @@ namespace CuaHangDienTu
             UC_XemPhieuNhap uc = new UC_XemPhieuNhap();
             AddControl(uc);
         }
-
+        long MaPhieu = PhieuNhapBUS.GetMaPN();
         private void btnPhieuNhap_Click(object sender, EventArgs e)
         {
-            
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thêm phiếu nhập mới", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                PhieuNhapBUS.InsertPhieuNhap(MaNhanvien, DateTime.Now);              
+                UC_NhapHang frm = new UC_NhapHang(MaPhieu);
+                AddControl(frm);
+                MessageBox.Show("Thêm phiếu nhập thành công");
+            }
+                
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -197,8 +210,8 @@ namespace CuaHangDienTu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //bool check = false;
             
+            lbTen.Text = TenNV;
 
 
         }

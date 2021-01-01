@@ -55,7 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbbMaSP = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbbTen = new System.Windows.Forms.TextBox();
             this.btnThemmoi = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -102,7 +101,7 @@
             this.btnThanhToan.IdleIconLeftImage = null;
             this.btnThanhToan.IdleIconRightImage = null;
             this.btnThanhToan.IndicateFocus = false;
-            this.btnThanhToan.Location = new System.Drawing.Point(761, 566);
+            this.btnThanhToan.Location = new System.Drawing.Point(756, 566);
             this.btnThanhToan.Name = "btnThanhToan";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 15;
@@ -250,7 +249,7 @@
             this.btnLuu.IdleIconLeftImage = null;
             this.btnLuu.IdleIconRightImage = null;
             this.btnLuu.IndicateFocus = false;
-            this.btnLuu.Location = new System.Drawing.Point(860, 14);
+            this.btnLuu.Location = new System.Drawing.Point(854, 14);
             this.btnLuu.Name = "btnLuu";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 15;
@@ -279,22 +278,22 @@
             // 
             // txtGiaNhap
             // 
-            this.txtGiaNhap.Location = new System.Drawing.Point(718, 18);
+            this.txtGiaNhap.Location = new System.Drawing.Point(690, 18);
             this.txtGiaNhap.Name = "txtGiaNhap";
-            this.txtGiaNhap.Size = new System.Drawing.Size(116, 22);
+            this.txtGiaNhap.Size = new System.Drawing.Size(144, 22);
             this.txtGiaNhap.TabIndex = 131;
             // 
             // txtSL
             // 
-            this.txtSL.Location = new System.Drawing.Point(546, 18);
+            this.txtSL.Location = new System.Drawing.Point(438, 17);
             this.txtSL.Name = "txtSL";
-            this.txtSL.Size = new System.Drawing.Size(80, 22);
+            this.txtSL.Size = new System.Drawing.Size(164, 22);
             this.txtSL.TabIndex = 130;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(646, 21);
+            this.label4.Location = new System.Drawing.Point(618, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 128;
@@ -303,7 +302,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(451, 21);
+            this.label3.Location = new System.Drawing.Point(364, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 127;
@@ -312,9 +311,9 @@
             // cbbMaSP
             // 
             this.cbbMaSP.FormattingEnabled = true;
-            this.cbbMaSP.Location = new System.Drawing.Point(123, 17);
+            this.cbbMaSP.Location = new System.Drawing.Point(114, 17);
             this.cbbMaSP.Name = "cbbMaSP";
-            this.cbbMaSP.Size = new System.Drawing.Size(124, 24);
+            this.cbbMaSP.Size = new System.Drawing.Size(133, 24);
             this.cbbMaSP.TabIndex = 125;
             this.cbbMaSP.SelectionChangeCommitted += new System.EventHandler(this.cbbMaSP_SelectionChangeCommitted);
             // 
@@ -327,14 +326,6 @@
             this.label2.TabIndex = 124;
             this.label2.Text = "Chọn sản phẩm:";
             // 
-            // cbbTen
-            // 
-            this.cbbTen.Enabled = false;
-            this.cbbTen.Location = new System.Drawing.Point(260, 18);
-            this.cbbTen.Name = "cbbTen";
-            this.cbbTen.Size = new System.Drawing.Size(174, 22);
-            this.cbbTen.TabIndex = 126;
-            // 
             // btnThemmoi
             // 
             this.btnThemmoi.AllowToggling = false;
@@ -344,7 +335,7 @@
             this.btnThemmoi.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(235)))), ((int)(((byte)(193)))));
             this.btnThemmoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemmoi.BackgroundImage")));
             this.btnThemmoi.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnThemmoi.ButtonText = "Nhập sản phẩm mới";
+            this.btnThemmoi.ButtonText = "Thêm mới";
             this.btnThemmoi.ButtonTextMarginLeft = 0;
             this.btnThemmoi.ColorContrastOnClick = 45;
             this.btnThemmoi.ColorContrastOnHover = 45;
@@ -372,7 +363,7 @@
             this.btnThemmoi.IdleIconLeftImage = null;
             this.btnThemmoi.IdleIconRightImage = null;
             this.btnThemmoi.IndicateFocus = false;
-            this.btnThemmoi.Location = new System.Drawing.Point(3, 566);
+            this.btnThemmoi.Location = new System.Drawing.Point(263, 9);
             this.btnThemmoi.Name = "btnThemmoi";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties5.BorderRadius = 15;
@@ -392,7 +383,7 @@
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.btnThemmoi.OnPressedState = stateProperties6;
-            this.btnThemmoi.Size = new System.Drawing.Size(182, 37);
+            this.btnThemmoi.Size = new System.Drawing.Size(95, 37);
             this.btnThemmoi.TabIndex = 134;
             this.btnThemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThemmoi.TextMarginLeft = 0;
@@ -423,7 +414,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.cbbMaSP);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.cbbTen);
+            this.panel2.Controls.Add(this.btnThemmoi);
             this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtGiaNhap);
@@ -440,7 +431,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnThemmoi);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.dgvNhapHang);
             this.Name = "UC_NhapHang";
@@ -466,7 +456,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbbMaSP;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox cbbTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;

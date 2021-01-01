@@ -931,9 +931,9 @@
             this.lbTen.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTen.Location = new System.Drawing.Point(153, 22);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(48, 18);
+            this.lbTen.Size = new System.Drawing.Size(153, 18);
             this.lbTen.TabIndex = 49;
-            this.lbTen.Text = "label2";
+            this.lbTen.Text = "Phạm Huỳnh Hải Yến";
             // 
             // timer1
             // 

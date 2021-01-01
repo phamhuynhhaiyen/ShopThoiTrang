@@ -14,9 +14,7 @@ namespace DAO
         public static DataTable GetAllNhanVien()
         {
             SqlConnection con = dbConnection.HamKetNoi();
-            List<NhanVienDTO> lstNhanVien = new List<NhanVienDTO>();      
-            //SqlCommand command = new SqlCommand("SELECT MaNV, TenNV, TenQuyen, NgaySinh, GioiTinh, SDT FROM NhanVien, Quyen where NhanVien.MaQuyen = Quyen.MaQuyen", con);
-            //command.CommandType = CommandType.Text;
+            List<NhanVienDTO> lstNhanVien = new List<NhanVienDTO>();                  
             con.Open();
             SqlDataAdapter command = new SqlDataAdapter("SELECT MaNV, TenNV, TenQuyen, NgaySinh, GioiTinh, SDT FROM NhanVien, Quyen where NhanVien.MaQuyen = Quyen.MaQuyen",con);
             DataTable dataTable = new DataTable();

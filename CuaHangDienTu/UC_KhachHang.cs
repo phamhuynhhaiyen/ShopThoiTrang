@@ -16,14 +16,10 @@ namespace CuaHangDienTu
         public UC_KhachHang()
         {
             InitializeComponent();
-        }
-        public void LoadDuLieu()
-        {
-            
-        }
+        }       
         private void UC_KhachHang_Load(object sender, EventArgs e)
         {
-            LoadDuLieu();
+            
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

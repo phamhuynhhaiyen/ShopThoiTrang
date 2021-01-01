@@ -1,4 +1,6 @@
 ﻿
+using BUS;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,13 @@ namespace CuaHangDienTu
 {
     public partial class frmThemKH : Form
     {
-        public frmThemKH()
+        string SDT;
+        
+        public frmThemKH(string sdt)
         {
             InitializeComponent();
+            this.SDT = sdt;
+            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -25,7 +31,20 @@ namespace CuaHangDienTu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if(txtTen.Text != "")
+            {
+                KhachHangDTO kh = new KhachHangDTO(SDT, txtTen.Text);
+                KhachHangBUS.InsertKhachHang(kh);
+                //HoaDonBUS.InsertHoaDon(SDT, manv, DateTime.Now, 0);
+                MessageBox.Show("Thêm thành công");
+                Dispose();
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa nhập tên");
+            }
             
         }
+
     }
 }

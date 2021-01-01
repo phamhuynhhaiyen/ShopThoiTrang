@@ -139,6 +139,7 @@
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThoat.TextMarginLeft = 0;
             this.btnThoat.UseDefaultRadiusAndThickness = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // cbbNCC
             // 

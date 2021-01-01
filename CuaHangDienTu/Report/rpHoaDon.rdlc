@@ -117,7 +117,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!MaHD.Value</Value>
+                    <Value />
                     <Style>
                       <FontFamily>MS Reference Sans Serif</FontFamily>
                     </Style>
@@ -181,7 +181,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!KhachHang.Value</Value>
+                    <Value />
                     <Style>
                       <FontFamily>MS Reference Sans Serif</FontFamily>
                     </Style>
@@ -245,7 +245,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!NhanVien.Value</Value>
+                    <Value />
                     <Style>
                       <FontFamily>MS Reference Sans Serif</FontFamily>
                     </Style>
@@ -309,7 +309,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!NgayLap.Value</Value>
+                    <Value />
                     <Style>
                       <FontFamily>MS Reference Sans Serif</FontFamily>
                       <FontWeight>Normal</FontWeight>
@@ -374,7 +374,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Sum(Fields!ThanhTien1.Value, "DataSet1")</Value>
+                    <Value />
                     <Style>
                       <FontFamily>MS Reference Sans Serif</FontFamily>
                     </Style>
@@ -841,50 +841,10 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="MaHD">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="KhachHang">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="NhanVien">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="NgayLap">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>MaHD</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>KhachHang</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>NhanVien</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>NgayLap</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

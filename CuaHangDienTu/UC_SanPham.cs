@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 
 namespace CuaHangDienTu
 {
@@ -23,23 +23,12 @@ namespace CuaHangDienTu
             frmLoaiSP frm = new frmLoaiSP();
             frm.Show();
         }
-        public void LoadcbbLoaiSP()
-        {
-            
-        }
-        public void LoadcbbNCC()
-        {
-            
-        }
-        public void LoadDuLieu()
-        {
-
-        }
+        
+        
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
-            LoadcbbLoaiSP();
-            LoadcbbNCC();
-            LoadDuLieu();
+            dgvNhanVien.DataSource = SanPhamBUS.GetAllSanPham();
+            
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

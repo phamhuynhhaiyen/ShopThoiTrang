@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 
 namespace CuaHangDienTu
 {
@@ -17,10 +17,7 @@ namespace CuaHangDienTu
         {
             InitializeComponent();
         }
-        public void LoadDuLieu()
-        {
-            
-        }
+        
         private void txttimkiem_KeyDown(object sender, KeyEventArgs e)
         {
             
@@ -28,7 +25,7 @@ namespace CuaHangDienTu
 
         private void UC_XemPhieuNhap_Load(object sender, EventArgs e)
         {
-            LoadDuLieu();
+            dgvHD.DataSource = PhieuNhapBUS.GetAllPhieuNhap();
         }
 
         private void dgvHD_CellClick(object sender, DataGridViewCellEventArgs e)

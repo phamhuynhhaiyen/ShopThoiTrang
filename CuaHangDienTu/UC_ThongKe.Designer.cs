@@ -35,13 +35,13 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -57,6 +57,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 58);
             this.panel1.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2018",
+            "2019",
+            "2020"});
+            this.comboBox1.Location = new System.Drawing.Point(674, 14);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(174, 24);
+            this.comboBox1.TabIndex = 52;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(623, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 18);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Năm:";
             // 
             // label1
             // 
@@ -114,28 +136,6 @@
             // 
             this.bunifuElipse2.ElipseRadius = 35;
             this.bunifuElipse2.TargetControl = this.panel2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(623, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 18);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Năm:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2018",
-            "2019",
-            "2020"});
-            this.comboBox1.Location = new System.Drawing.Point(674, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 24);
-            this.comboBox1.TabIndex = 52;
             // 
             // UC_ThongKe
             // 

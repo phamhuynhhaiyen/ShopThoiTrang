@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CuaHangDienTu.Report
 {
-    public partial class Form1 : Form
+    public partial class frmHoaDon : Form
     {
-        public Form1()
+        public frmHoaDon()
         {
             InitializeComponent();
             

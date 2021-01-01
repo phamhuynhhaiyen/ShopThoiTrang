@@ -184,14 +184,11 @@ C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.frmLogin
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.frmThemKH.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.frmThemSP.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.Properties.Resources.resources
-C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.Report.Form1.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.Report.frmPhieuNhap.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_BanHang.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_DoiMK.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_KhachHang.resources
-C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_KiemTra.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_LapHoaDon.resources
-C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_LapPhieuBH.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_NhaCungCap.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_NhanVien.resources
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_NhapHang.resources
@@ -212,3 +209,4 @@ C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\DAO.dll
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\BUS.pdb
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\DTO.pdb
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\DAO.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.Report.frmHoaDon.resources

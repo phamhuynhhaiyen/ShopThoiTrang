@@ -130,11 +130,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\Form1.cs">
+    <Compile Include="QLshopthoitrangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLshopthoitrangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Report\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\frmPhieuNhap.cs">
       <SubType>Form</SubType>
@@ -161,23 +166,11 @@
     <Compile Include="UC_KhachHang.Designer.cs">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_KiemTra.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_KiemTra.Designer.cs">
-      <DependentUpon>UC_KiemTra.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_LapHoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_LapHoaDon.Designer.cs">
       <DependentUpon>UC_LapHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC_LapPhieuBH.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_LapPhieuBH.Designer.cs">
-      <DependentUpon>UC_LapPhieuBH.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_NhaCungCap.cs">
       <SubType>UserControl</SubType>
@@ -241,13 +234,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Report\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\frmPhieuNhap.resx">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report1.rdlc" />
+    <EmbeddedResource Include="Report\rpHoaDon.rdlc" />
     <EmbeddedResource Include="Report\rpPhieuNhap.rdlc" />
     <EmbeddedResource Include="UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
@@ -258,14 +251,8 @@
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_KiemTra.resx">
-      <DependentUpon>UC_KiemTra.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UC_LapHoaDon.resx">
       <DependentUpon>UC_LapHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_LapPhieuBH.resx">
-      <DependentUpon>UC_LapPhieuBH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NhaCungCap.resx">
       <DependentUpon>UC_NhaCungCap.cs</DependentUpon>
@@ -289,7 +276,13 @@
       <DependentUpon>UC_XemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BUS.NhanVienBUS.datasource" />
+    <None Include="Properties\DataSources\BUS.PhieuNhapBUS.datasource" />
+    <None Include="Properties\DataSources\BUS.SanPhamBUS.datasource" />
+    <None Include="Properties\DataSources\BUS.UserBUS.datasource" />
     <None Include="Properties\DataSources\CTHD1.datasource" />
+    <None Include="Properties\DataSources\DAO.PhieuNhapDAO.datasource" />
+    <None Include="Properties\DataSources\DTO.CTPNDTO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -304,6 +297,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLshopthoitrangDataSet.xsc">
+      <DependentUpon>QLshopthoitrangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLshopthoitrangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLshopthoitrangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLshopthoitrangDataSet.xss">
+      <DependentUpon>QLshopthoitrangDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\sort_up_20px.png" />
     <None Include="Resources\sort_down_20px.png" />
     <None Include="Resources\subtract_15px.png" />
@@ -351,6 +355,10 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{9392a30c-b2bc-404b-82f1-93627fbaf063}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{2f585061-5b10-4ebc-aa23-e1e7da9cc724}</Project>
+      <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{AD3047EE-85AE-4097-B962-B51A132F6D6F}</Project>
