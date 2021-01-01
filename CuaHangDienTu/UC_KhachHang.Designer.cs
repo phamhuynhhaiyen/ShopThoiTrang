@@ -49,25 +49,16 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtcmnd = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLuu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dgvNhanVien = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamSInh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -81,16 +72,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtcmnd);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTen);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtSDT);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLuu);
@@ -99,73 +84,18 @@
             this.panel1.Size = new System.Drawing.Size(891, 155);
             this.panel1.TabIndex = 64;
             // 
-            // txtcmnd
+            // txtTen
             // 
-            this.txtcmnd.Location = new System.Drawing.Point(634, 57);
-            this.txtcmnd.Margin = new System.Windows.Forms.Padding(5);
-            this.txtcmnd.Name = "txtcmnd";
-            this.txtcmnd.Size = new System.Drawing.Size(168, 22);
-            this.txtcmnd.TabIndex = 102;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(507, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "CMND:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(283, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 24);
-            this.comboBox1.TabIndex = 100;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(283, 55);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(171, 22);
-            this.dateTimePicker1.TabIndex = 94;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(172, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 17);
-            this.label5.TabIndex = 99;
-            this.label5.Text = "Giới tính:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(172, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 17);
-            this.label8.TabIndex = 98;
-            this.label8.Text = "Ngày sinh:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(634, 16);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 22);
-            this.textBox1.TabIndex = 97;
+            this.txtTen.Location = new System.Drawing.Point(634, 40);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(171, 22);
+            this.txtTen.TabIndex = 97;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(507, 19);
+            this.label10.Location = new System.Drawing.Point(507, 43);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(115, 17);
             this.label10.TabIndex = 96;
@@ -174,19 +104,19 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(172, 19);
+            this.label11.Location = new System.Drawing.Point(172, 43);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 17);
             this.label11.TabIndex = 93;
             this.label11.Text = "SDT:";
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Location = new System.Drawing.Point(283, 16);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 22);
-            this.textBox2.TabIndex = 95;
+            this.txtSDT.Location = new System.Drawing.Point(283, 40);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(5);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(171, 22);
+            this.txtSDT.TabIndex = 95;
             // 
             // btnHuy
             // 
@@ -225,7 +155,7 @@
             this.btnHuy.IdleIconLeftImage = null;
             this.btnHuy.IdleIconRightImage = null;
             this.btnHuy.IndicateFocus = false;
-            this.btnHuy.Location = new System.Drawing.Point(706, 111);
+            this.btnHuy.Location = new System.Drawing.Point(706, 91);
             this.btnHuy.Name = "btnHuy";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 15;
@@ -288,7 +218,7 @@
             this.btnXoa.IdleIconLeftImage = null;
             this.btnXoa.IdleIconRightImage = null;
             this.btnXoa.IndicateFocus = false;
-            this.btnXoa.Location = new System.Drawing.Point(580, 111);
+            this.btnXoa.Location = new System.Drawing.Point(580, 91);
             this.btnXoa.Name = "btnXoa";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 15;
@@ -313,6 +243,7 @@
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnXoa.TextMarginLeft = 0;
             this.btnXoa.UseDefaultRadiusAndThickness = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -351,7 +282,7 @@
             this.btnLuu.IdleIconLeftImage = null;
             this.btnLuu.IdleIconRightImage = null;
             this.btnLuu.IndicateFocus = false;
-            this.btnLuu.Location = new System.Drawing.Point(455, 111);
+            this.btnLuu.Location = new System.Drawing.Point(455, 91);
             this.btnLuu.Name = "btnLuu";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties5.BorderRadius = 15;
@@ -398,10 +329,7 @@
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SDT,
-            this.TenKH,
-            this.GioiTinh,
-            this.NamSInh,
-            this.CMND});
+            this.TenKH});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -430,6 +358,7 @@
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhanVien.Size = new System.Drawing.Size(891, 398);
             this.dgvNhanVien.TabIndex = 63;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // SDT
             // 
@@ -446,30 +375,6 @@
             this.TenKH.HeaderText = "Tên ";
             this.TenKH.MinimumWidth = 6;
             this.TenKH.Name = "TenKH";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // NamSInh
-            // 
-            this.NamSInh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NamSInh.DataPropertyName = "NamSinh";
-            this.NamSInh.HeaderText = "Năm sinh";
-            this.NamSInh.MinimumWidth = 6;
-            this.NamSInh.Name = "NamSInh";
-            // 
-            // CMND
-            // 
-            this.CMND.DataPropertyName = "CMND";
-            this.CMND.HeaderText = "CMND";
-            this.CMND.MinimumWidth = 6;
-            this.CMND.Name = "CMND";
-            this.CMND.Width = 125;
             // 
             // bunifuTextBox1
             // 
@@ -567,23 +472,14 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnXoa;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLuu;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvNhanVien;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox1;
-        private System.Windows.Forms.TextBox txtcmnd;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSDT;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLuu;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NamSInh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CMND;
     }
 }

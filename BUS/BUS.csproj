@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HoaDonBUS.cs" />
     <Compile Include="KhachHangBUS.cs" />
+    <Compile Include="NhaCungCapBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
     <Compile Include="PhieuNhapBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

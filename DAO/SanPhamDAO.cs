@@ -15,7 +15,7 @@ namespace DAO
         {
             SqlConnection con = dbConnection.HamKetNoi();           
             con.Open();
-            SqlDataAdapter command = new SqlDataAdapter("SELECT * FROM SANPHAM", con);
+            SqlDataAdapter command = new SqlDataAdapter("SELECT MaSP, TenSP, TenLoai, TenNCC, SoLuongTon FROM SANPHAM, LoaiSanPham, NhaCungCap WHERE SanPham.MaLoai = LoaiSanPham.MaLoai AND NhaCungCap.MaNCC = SanPham.MaNCC", con);
             DataTable dataTable = new DataTable();
             command.Fill(dataTable);
             return dataTable;
@@ -50,6 +50,36 @@ namespace DAO
             var sl = command.ExecuteScalar();
             return (int)sl;
 
+        }
+        public static DataTable GetAllLoai()
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            SqlDataAdapter command = new SqlDataAdapter("SELECT * From LoaiSanPham", con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+
+        }
+        public static void InsertSP(string ten, long maloai, long mancc)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"INSERT INTO SanPham ([TenSP], [MaLoai], [MaNCC])  VALUES(N'{0}', {1},{2})", ten, maloai, mancc);
+            SqlCommand command = new SqlCommand(sql, con);
+            command.CommandType = CommandType.Text;
+            command.ExecuteNonQuery();
+            con.Close();
+        }
+        public static void DeleteSP(long masp)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"DELETE SanPham WHERE [MaSP] = {0}", masp);
+            SqlCommand command = new SqlCommand(sql, con);
+            command.CommandType = CommandType.Text;
+            command.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

@@ -154,6 +154,12 @@
     <Compile Include="UC_BanHang.Designer.cs">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_BieuDo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BieuDo.Designer.cs">
+      <DependentUpon>UC_BieuDo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_DoiMK.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     <EmbeddedResource Include="UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_BieuDo.resx">
+      <DependentUpon>UC_BieuDo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_DoiMK.resx">
       <DependentUpon>UC_DoiMK.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +285,7 @@
       <DependentUpon>UC_XemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BUS.HoaDonBUS.datasource" />
     <None Include="Properties\DataSources\BUS.NhanVienBUS.datasource" />
     <None Include="Properties\DataSources\BUS.PhieuNhapBUS.datasource" />
     <None Include="Properties\DataSources\BUS.SanPhamBUS.datasource" />

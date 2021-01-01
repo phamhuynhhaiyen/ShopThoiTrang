@@ -137,8 +137,7 @@ namespace CuaHangDienTu
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
-            UC_DoiMK mk = new UC_DoiMK();
-            AddControl(mk);
+            
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -176,13 +175,14 @@ namespace CuaHangDienTu
             UC_XemPhieuNhap uc = new UC_XemPhieuNhap();
             AddControl(uc);
         }
-        long MaPhieu = PhieuNhapBUS.GetMaPN();
+        long MaPhieu;
         private void btnPhieuNhap_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thêm phiếu nhập mới", "Thông báo", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                PhieuNhapBUS.InsertPhieuNhap(MaNhanvien, DateTime.Now);              
+                PhieuNhapBUS.InsertPhieuNhap(MaNhanvien, DateTime.Now);
+                MaPhieu = PhieuNhapBUS.GetMaPN();
                 UC_NhapHang frm = new UC_NhapHang(MaPhieu);
                 AddControl(frm);
                 MessageBox.Show("Thêm phiếu nhập thành công");
@@ -214,6 +214,12 @@ namespace CuaHangDienTu
             lbTen.Text = TenNV;
 
 
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+            UC_DoiMK mk = new UC_DoiMK();
+            AddControl(mk);
         }
     }
 }

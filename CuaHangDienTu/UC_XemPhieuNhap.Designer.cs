@@ -37,23 +37,19 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.dgvHD = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txttimkiem = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.MaPhieuNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,13 +106,47 @@
             this.dgvHD.TabIndex = 121;
             this.dgvHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHD_CellClick);
             // 
+            // MaPhieuNhap
+            // 
+            this.MaPhieuNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.MaPhieuNhap.DataPropertyName = "MaPhieuNhap";
+            this.MaPhieuNhap.HeaderText = "Mã phiếu nhập";
+            this.MaPhieuNhap.MinimumWidth = 6;
+            this.MaPhieuNhap.Name = "MaPhieuNhap";
+            this.MaPhieuNhap.Width = 125;
+            // 
+            // TenNV
+            // 
+            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Người lập";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            // 
+            // NgayLap
+            // 
+            this.NgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayLap.DataPropertyName = "NgayLap";
+            this.NgayLap.HeaderText = "Ngày lập";
+            this.NgayLap.MinimumWidth = 6;
+            this.NgayLap.Name = "NgayLap";
+            // 
+            // TongTien
+            // 
+            this.TongTien.DataPropertyName = "TongTien";
+            this.TongTien.HeaderText = "Tổng tiền";
+            this.TongTien.MinimumWidth = 6;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.ReadOnly = true;
+            this.TongTien.Width = 125;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txttimkiem);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -171,7 +201,7 @@
             this.btnHuy.IdleIconLeftImage = null;
             this.btnHuy.IdleIconRightImage = null;
             this.btnHuy.IndicateFocus = false;
-            this.btnHuy.Location = new System.Drawing.Point(442, 85);
+            this.btnHuy.Location = new System.Drawing.Point(194, 92);
             this.btnHuy.Name = "btnHuy";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             stateProperties1.BorderRadius = 35;
@@ -196,6 +226,7 @@
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHuy.TextMarginLeft = 0;
             this.btnHuy.UseDefaultRadiusAndThickness = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // label3
             // 
@@ -206,80 +237,6 @@
             this.label3.Size = new System.Drawing.Size(287, 18);
             this.label3.TabIndex = 53;
             this.label3.Text = "và tối giản con đường đến sự hoàn hảo";
-            // 
-            // txttimkiem
-            // 
-            this.txttimkiem.AcceptsReturn = false;
-            this.txttimkiem.AcceptsTab = false;
-            this.txttimkiem.AnimationSpeed = 200;
-            this.txttimkiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txttimkiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txttimkiem.BackColor = System.Drawing.Color.Transparent;
-            this.txttimkiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txttimkiem.BackgroundImage")));
-            this.txttimkiem.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txttimkiem.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txttimkiem.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txttimkiem.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txttimkiem.BorderRadius = 1;
-            this.txttimkiem.BorderThickness = 1;
-            this.txttimkiem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txttimkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttimkiem.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txttimkiem.DefaultText = "";
-            this.txttimkiem.FillColor = System.Drawing.Color.White;
-            this.txttimkiem.HideSelection = true;
-            this.txttimkiem.IconLeft = null;
-            this.txttimkiem.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttimkiem.IconPadding = 10;
-            this.txttimkiem.IconRight = null;
-            this.txttimkiem.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttimkiem.Lines = new string[0];
-            this.txttimkiem.Location = new System.Drawing.Point(24, 84);
-            this.txttimkiem.MaxLength = 32767;
-            this.txttimkiem.MinimumSize = new System.Drawing.Size(100, 35);
-            this.txttimkiem.Modified = false;
-            this.txttimkiem.Multiline = false;
-            this.txttimkiem.Name = "txttimkiem";
-            stateProperties3.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txttimkiem.OnActiveState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Empty;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txttimkiem.OnDisabledState = stateProperties4;
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txttimkiem.OnHoverState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Silver;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txttimkiem.OnIdleState = stateProperties6;
-            this.txttimkiem.PasswordChar = '\0';
-            this.txttimkiem.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txttimkiem.PlaceholderText = "Search";
-            this.txttimkiem.ReadOnly = false;
-            this.txttimkiem.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txttimkiem.SelectedText = "";
-            this.txttimkiem.SelectionLength = 0;
-            this.txttimkiem.SelectionStart = 0;
-            this.txttimkiem.ShortcutsEnabled = true;
-            this.txttimkiem.Size = new System.Drawing.Size(412, 35);
-            this.txttimkiem.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txttimkiem.TabIndex = 120;
-            this.txttimkiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txttimkiem.TextMarginBottom = 0;
-            this.txttimkiem.TextMarginLeft = 5;
-            this.txttimkiem.TextMarginTop = 0;
-            this.txttimkiem.TextPlaceholder = "Search";
-            this.txttimkiem.UseSystemPasswordChar = false;
-            this.txttimkiem.WordWrap = true;
-            this.txttimkiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttimkiem_KeyDown);
             // 
             // label2
             // 
@@ -308,39 +265,13 @@
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this.panel1;
             // 
-            // MaPhieuNhap
+            // dateTimePicker1
             // 
-            this.MaPhieuNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.MaPhieuNhap.DataPropertyName = "MaPhieuNhap";
-            this.MaPhieuNhap.HeaderText = "Mã phiếu nhập";
-            this.MaPhieuNhap.MinimumWidth = 6;
-            this.MaPhieuNhap.Name = "MaPhieuNhap";
-            this.MaPhieuNhap.Width = 125;
-            // 
-            // TenNV
-            // 
-            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Người lập";
-            this.TenNV.MinimumWidth = 6;
-            this.TenNV.Name = "TenNV";
-            // 
-            // NgayLap
-            // 
-            this.NgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayLap.DataPropertyName = "NgayLap";
-            this.NgayLap.HeaderText = "Ngày lập";
-            this.NgayLap.MinimumWidth = 6;
-            this.NgayLap.Name = "NgayLap";
-            // 
-            // TongTien
-            // 
-            this.TongTien.DataPropertyName = "TongTien";
-            this.TongTien.HeaderText = "Tổng tiền";
-            this.TongTien.MinimumWidth = 6;
-            this.TongTien.Name = "TongTien";
-            this.TongTien.ReadOnly = true;
-            this.TongTien.Width = 125;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(24, 99);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(150, 22);
+            this.dateTimePicker1.TabIndex = 122;
             // 
             // UC_XemPhieuNhap
             // 
@@ -362,7 +293,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvHD;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txttimkiem;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
         private System.Windows.Forms.Label label3;
@@ -374,5 +304,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

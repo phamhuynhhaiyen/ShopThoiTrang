@@ -13,6 +13,10 @@ namespace BUS
         {
             return SanPhamDAO.GetAllSanPham();
         }
+        public static DataTable GetAllLoai()
+        {
+            return SanPhamDAO.GetAllLoai();
+        }
         public static string GetTenSP(long masp)
         {
             return SanPhamDAO.GetTenSanPham(masp);
@@ -25,6 +29,14 @@ namespace BUS
         public static int GetSoLuongTon(long maSP)
         {
             return SanPhamDAO.GetSoLuongTon(maSP);
+        }
+        public static void InsertSP( string ten, long maloai, long ncc)
+        {
+            SanPhamDAO.InsertSP(ten, maloai, ncc);
+        }
+        public static void DeleteSP(long masp)
+        {
+            SanPhamDAO.DeleteSP(masp);
         }
     }
 }

@@ -60,5 +60,60 @@ namespace DAO
             return dataTable;
 
         }
+        public static DataSet GetThangHD(int nam)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string cl =string.Format( @" SELECT MONTH(HoaDon.NgayLap) as Thang , sum(HoaDon.TongTien) as Tien  FROM  HoaDon  WHERE  YEAR(HoaDon.NgayLap) = {0} group by MONTH(HoaDon.NgayLap) ", nam);           
+            SqlCommand cmd = new SqlCommand(cl, con);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            ad.Fill(ds);
+            con.Close();
+            return ds;
+        }
+        public static DataTable GetHoaDon(long mahd)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"SELECT MAHD, TENKH, TENNV, NGAYLAP, TongTien FROM HoaDon, KhachHang, NhanVien WHERE HoaDon.MaNV = NhanVien.MaNV AND HoaDon.SDT = KhachHang.SDT AND MAHD = {0}", mahd);
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+        }
+        public static DataTable GetNamHD()
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+
+            string sql = string.Format("SELECT YEAR(NGAYlAP) AS 'YEAR' FROM HoaDon GROUP BY YEAR(NgayLap)");
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+            
+        }
+        public static DataTable GetHoaDonTheoSDT(string sdt)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"SELECT MAHD, TENKH, TENNV, NGAYLAP, TongTien FROM HoaDon, KhachHang, NhanVien WHERE HoaDon.MaNV = NhanVien.MaNV AND HoaDon.SDT = KhachHang.SDT AND HoaDon.SDT = {0}", sdt);
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+        }
+        public static long TongDoanhThu(long nam)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format("select sum(TongTien) as Tong from HoaDon where Year(NgayLap) = {0}", nam);
+            SqlCommand command = new SqlCommand(sql, con);
+            var tong = command.ExecuteScalar();
+            return (long)tong;
+        }
     }
 }

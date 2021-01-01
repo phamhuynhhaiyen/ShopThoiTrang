@@ -20,33 +20,7 @@ namespace DAO
             DataTable dataTable = new DataTable();
             command.Fill(dataTable);
             return dataTable;
-            //    using (SqlDataReader dataReader = command.ExecuteReader())
-            //    {
-            //    if (dataReader.HasRows)
-            //    {
-            //            while (dataReader.Read())
-            //            {
-            //                    NhanVienDTO temp = new NhanVienDTO();
-            //                    long MaNV = dataReader.GetInt64(dataReader.GetOrdinal("MaNV"));
-            //                    if (MaNV != null)
-            //                    {
-            //                        temp.MaNV = MaNV;
-            //                        temp.TenNV = dataReader["TenNV"].ToString();
-            //                        string MaQuyen = dataReader["MaQuyen"].ToString();
-            //                        if (MaQuyen != null)
-            //                            temp.MaQuyen = Convert.ToInt64(MaQuyen);
-            //                        string NgaySinh = dataReader["NgaySinh"].ToString();
-            //                        if (NgaySinh != null)
-            //                            temp.NgaySinh = Convert.ToDateTime(NgaySinh);
-            //                        temp.GioiTinh = dataReader["GioiTinh"].ToString();
-            //                    temp.SDT = dataReader["SDT"].ToString();
-
-            //                }
-            //                    lstNhanVien.Add(temp);
-            //            }
-            //     }
-            //}           
-            //return lstNhanVien;
+            
         }
         public static int GetNhanVien(long manv)
         {

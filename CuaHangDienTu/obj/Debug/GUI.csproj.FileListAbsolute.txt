@@ -210,3 +210,4 @@ C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\BUS.pdb
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\DTO.pdb
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\bin\Debug\DAO.pdb
 C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.Report.frmHoaDon.resources
+C:\Users\hp\Desktop\ShopThoiTrang\CuaHangDienTu\obj\Debug\CuaHangDienTu.UC_BieuDo.resources

@@ -21,5 +21,9 @@ namespace BUS
         {
             DAO.KhachHangDAO.InsertKhachHang(kh);
         }
+        public static void DeleteKhachHang(string SDT)
+        {
+            DAO.KhachHangDAO.DeleteKhachHang(SDT);
+        }
     }
 }

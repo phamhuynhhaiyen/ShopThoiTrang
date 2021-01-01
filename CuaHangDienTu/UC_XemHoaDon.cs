@@ -25,14 +25,28 @@ namespace CuaHangDienTu
         
         private void txttimkiem_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if(e.KeyCode == Keys.Enter)
+            {
+                dgvHD.DataSource = BUS.HoaDonBUS.GetHoaDonTheoSDT(txttimkiem.Text);
+            }
             
 
         }
 
         private void dgvHD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvHD.Rows[e.RowIndex];
+                long mahd = long.Parse(row.Cells[0].Value.ToString());
+                frmHoaDon frm = new frmHoaDon(mahd);
+                frm.Show();
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

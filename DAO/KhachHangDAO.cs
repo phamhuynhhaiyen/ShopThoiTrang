@@ -55,5 +55,15 @@ namespace DAO
             command.ExecuteNonQuery();
             con.Close();
         }
+        public static void DeleteKhachHang(string SDT)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"DELETE KhachHang WHERE SDT = N'{0}'", SDT);
+            SqlCommand command = new SqlCommand(sql, con);
+
+            command.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

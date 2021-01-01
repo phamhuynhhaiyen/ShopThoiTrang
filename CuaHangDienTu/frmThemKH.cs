@@ -34,8 +34,7 @@ namespace CuaHangDienTu
             if(txtTen.Text != "")
             {
                 KhachHangDTO kh = new KhachHangDTO(SDT, txtTen.Text);
-                KhachHangBUS.InsertKhachHang(kh);
-                //HoaDonBUS.InsertHoaDon(SDT, manv, DateTime.Now, 0);
+                KhachHangBUS.InsertKhachHang(kh);               
                 MessageBox.Show("Thêm thành công");
                 Dispose();
             }

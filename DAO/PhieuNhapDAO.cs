@@ -25,7 +25,7 @@ namespace DAO
         {
             SqlConnection con = dbConnection.HamKetNoi();
             string sql = string.Format(@"SELECT MaPhieuNhap, TenNV, NgayLap, TongTien FROM PhieuNhap, NhanVien WHERE PhieuNhap.MaNV = NhanVien.MaNV AND MaPhieuNhap = {0}", maPN);
-            con.Open();
+            con.Open();           
             SqlDataAdapter command = new SqlDataAdapter(sql, con);
             DataTable dataTable = new DataTable();
             command.Fill(dataTable);
@@ -69,6 +69,50 @@ namespace DAO
             command.Fill(dataTable);
             return dataTable;
             
+        }
+        public static DataSet GetThangPN(int nam)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string cl = string.Format(@" SELECT MONTH(PhieuNhap.NgayLap) as ThangPN , sum(PhieuNhap.TongTien) as TienPN  FROM  PhieuNhap WHERE  YEAR(PhieuNhap.NgayLap) = {0} group by MONTH(PhieuNhap.NgayLap)", nam);
+            SqlCommand cmd = new SqlCommand(cl, con);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            ad.Fill(ds);
+            con.Close();
+            return ds;
+        }
+        public static DataTable GetNamPN()
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+
+            string sql = string.Format("SELECT YEAR(NGAYlAP) AS 'YEAR' FROM PhieuNhap GROUP BY YEAR(NgayLap)");
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+
+        }
+        public static DataTable GetPhieuTheoNgay(DateTime NgayLap)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            string sql = string.Format(@"SELECT MaPhieuNhap, TenNV, NgayLap, TongTien FROM PhieuNhap, NhanVien WHERE PhieuNhap.MaNV = NhanVien.MaNV AND NgayLap = '{0}'", NgayLap);
+            con.Open();
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;
+
+        }
+        public static long TongChiPhi(long nam)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format("select sum(TongTien) as Tong from PhieuNhap where Year(NgayLap) = {0}", nam);
+            SqlCommand command = new SqlCommand(sql, con);
+            var tong = command.ExecuteScalar();
+            return (long)tong;
         }
     }
 }

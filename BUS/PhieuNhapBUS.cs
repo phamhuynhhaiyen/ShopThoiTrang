@@ -35,5 +35,21 @@ namespace BUS
         {
             return PhieuNhapDAO.GetCTPN(maPN);
         }
+        public static DataSet GetThangPN(int nam)
+        {
+            return PhieuNhapDAO.GetThangPN(nam);
+        }
+        public static DataTable GetNamPN()
+        {
+            return PhieuNhapDAO.GetNamPN();
+        }
+        public static DataTable GetPhieuTheoNgay(DateTime NgayLap)
+        {
+            return PhieuNhapDAO.GetPhieuTheoNgay(NgayLap);
+        }
+        public static long TongChiPhi(long nam)
+        {
+            return DAO.PhieuNhapDAO.TongChiPhi(nam);
+        }
     }
 }

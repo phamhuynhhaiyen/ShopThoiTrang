@@ -18,10 +18,7 @@ namespace CuaHangDienTu
             InitializeComponent();
         }
         
-        private void txttimkiem_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-        }
+        
 
         private void UC_XemPhieuNhap_Load(object sender, EventArgs e)
         {
@@ -37,6 +34,12 @@ namespace CuaHangDienTu
                 Report.frmPhieuNhap frm = new Report.frmPhieuNhap(maphieu);
                 frm.Show();
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            DateTime NgayLap = dateTimePicker1.Value;
+            dgvHD.DataSource = PhieuNhapBUS.GetPhieuTheoNgay(NgayLap);
         }
     }
 }

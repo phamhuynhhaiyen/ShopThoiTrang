@@ -31,5 +31,27 @@ namespace BUS
         {
             return DAO.HoaDonDAO.GetCTHD(mahd);
         }
+        public static DataSet GetThangHD(int nam)
+        {
+            return DAO.HoaDonDAO.GetThangHD(nam);
+        }
+        public static DataTable GetNamHD()
+        {
+            return DAO.HoaDonDAO.GetNamHD();
+        }
+        public static DataTable GetHoaDon(long mahd)
+        {
+            return DAO.HoaDonDAO.GetHoaDon(mahd);
+        }
+        public static DataTable GetHoaDonTheoSDT(string sdt)
+        {
+            return DAO.HoaDonDAO.GetHoaDonTheoSDT(sdt);
+        }
+        public static long TongDoanhThu(long nam)
+        {
+            return DAO.HoaDonDAO.TongDoanhThu(nam);
+        }
+
+
     }
 }

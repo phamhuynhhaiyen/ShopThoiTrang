@@ -19,7 +19,7 @@ namespace CuaHangDienTu
         {
             InitializeComponent();
         }
-        //List<NhanVien> listNhanVien;
+        
         
         private void UC_NhanVien_Load(object sender, EventArgs e)
         {

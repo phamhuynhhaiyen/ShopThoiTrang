@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
+using DTO;
 
 namespace CuaHangDienTu
 {
@@ -22,13 +23,29 @@ namespace CuaHangDienTu
             txtmancc.Text = txttenncc.Text = txtdiachi.Text = "";         
         }
 
-        public void LoadDuLieu()
-        {
-            
-        }
+        
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            
+            long MaNCC = long.Parse(txtmancc.Text);
+            string TenNCC = txttenncc.Text;
+            string DiaChi = txtdiachi.Text;
+            NhaCungCapDTO nhaCungCap = new NhaCungCapDTO(MaNCC, TenNCC, DiaChi);
+            if (NhaCungCapBUS.GetNCC(MaNCC) == 0)
+            {
+                MessageBox.Show("Thêm nhà cung cấp " + TenNCC + " thành công");
+                NhaCungCapBUS.InsertNCC(nhaCungCap);
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn thay đổi?", "Thông báo", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    NhaCungCapBUS.UpdateNCC(nhaCungCap);
+                }
+                
+            }
+            Reset();
+            dgvNhanVien.DataSource = NhaCungCapBUS.GetAllNCC();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -43,7 +60,7 @@ namespace CuaHangDienTu
 
         private void UC_NhaCungCap_Load(object sender, EventArgs e)
         {
-            LoadDuLieu();
+            dgvNhanVien.DataSource = NhaCungCapBUS.GetAllNCC();
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)

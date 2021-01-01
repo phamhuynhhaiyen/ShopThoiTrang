@@ -23,7 +23,7 @@ namespace CuaHangDienTu
             this.manhanvien = MaNV;
            
         }
-        long MaHD = HoaDonBUS.GetMaHD();
+        long MaHD;
         
         
         private void UC_LapHoaDon_Load(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace CuaHangDienTu
        
         private void btThanhToan_Click(object sender, EventArgs e)
         {
-            Report.frmHoaDon f = new Report.frmHoaDon();
+            Report.frmHoaDon f = new Report.frmHoaDon(MaHD);
             f.Show();
             pnCTHD.Visible = false;
         }
@@ -108,10 +108,11 @@ namespace CuaHangDienTu
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thêm phiếu nhập mới", "Thông báo", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thêm hóa đơn mới", "Thông báo", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 HoaDonBUS.InsertHoaDon(txtSDT.Text, manhanvien, DateTime.Now, 0);
+                MaHD = HoaDonBUS.GetMaHD();
                 pnCTHD.Visible = true;
             }
                 

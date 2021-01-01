@@ -45,6 +45,7 @@
     <Compile Include="CTPNDTO.cs" />
     <Compile Include="HoaDonDTO.cs" />
     <Compile Include="KhachHangDTO.cs" />
+    <Compile Include="NhaCungCapDTO.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="PhieuNhapDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
