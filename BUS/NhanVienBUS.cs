@@ -19,13 +19,13 @@ namespace BUS
         {
             return NhanVienDAO.GetNhanVien(manv);
         }
-        public static void InsertNhanVien(NhanVienDTO nv)
+        public static void InsertNhanVien(long manv, string tennv, long maquyen, DateTime ngaysinh, string gioitinh, string sdt, string mk)
         {
-            NhanVienDAO.InsertNhanVien(nv);
+            NhanVienDAO.InsertNhanVien(manv,tennv,maquyen,ngaysinh, gioitinh, sdt,mk);
         }
-        public static void UpdateNhanVien(NhanVienDTO nv)
+        public static void UpdateNhanVien(long manv, string tennv, long maquyen, DateTime ngaysinh, string gioitinh, string sdt)
         {
-            NhanVienDAO.UpdateNhanVien(nv);
+            NhanVienDAO.UpdateNhanVien(manv, tennv, maquyen, ngaysinh, gioitinh, sdt);
         }
         public static void DeleteNhanVien(long manv)
         {
@@ -34,6 +34,22 @@ namespace BUS
         public static List<QuyenDTO> GetAllQuyen()
         {
             return NhanVienDAO.GetAllQuyen();
+        }
+        public static string GetMKNhanVien(long manv)
+        {
+            return NhanVienDAO.GetMKNhanVien(manv);
+        }
+        public static string GetTenNhanVien(long manv)
+        {
+            return NhanVienDAO.GetTenNhanVien(manv);
+        }
+        public static void UpdateTaiKhoan(long manv, string mk)
+        {
+            NhanVienDAO.UpdateTaiKhoan(manv, mk);
+        }
+        public static long GetQuyenNhanVien(long manv)
+        {
+            return NhanVienDAO.GetQuyenNhanVien(manv);
         }
     }
 }

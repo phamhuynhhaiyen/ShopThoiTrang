@@ -20,35 +20,18 @@ namespace CuaHangDienTu
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
-        {
-            Boolean check = false;
-            //if(txtPassword.Text == "" || txtUsername.Text == "")
-            //{
-            //    MessageBox.Show("Vui lòng nhập mã nhân viên và mật khẩu!!");
-            //}
-            try
+        {           
+            if(NhanVienBUS.GetNhanVien(long.Parse(txtUsername.Text)) != 0)
             {
-                foreach (var u in UserBUS.GetAllUser())
+                if(txtPassword.Text == NhanVienBUS.GetMKNhanVien(long.Parse(txtUsername.Text)))
                 {
-                    if (u.TaiKhoan == long.Parse(txtUsername.Text) && u.MatKhau == txtPassword.Text)
-                    {
-                        MessageBox.Show("Đăng nhập thành công");
-                        check = true;
-                        string tennv = UserBUS.GetTenUser(u.TaiKhoan);
-                        Form1 frm = new Form1(u.TaiKhoan,tennv);
-                        
-                        frm.Show();
-                    }
+                    MessageBox.Show("Đăng nhập thành công!");
+                    string TenNV = NhanVienBUS.GetTenNhanVien(long.Parse(txtUsername.Text));
+                    Form1 frm = new Form1(long.Parse(txtUsername.Text), TenNV);
+                    frm.Show();
                 }
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Vui lòng nhập mã nhân viên và mật khẩu!!");
-            }
-            if (check == false)
-            {
-                //MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!");
-            }
+            else { MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ!"); }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -63,7 +46,7 @@ namespace CuaHangDienTu
         }
 
 
-        //MessageBox.Show(UserBUS.GetAllUser() + "");
+        
 
     }
 

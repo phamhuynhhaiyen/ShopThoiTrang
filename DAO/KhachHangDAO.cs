@@ -55,6 +55,16 @@ namespace DAO
             command.ExecuteNonQuery();
             con.Close();
         }
+        public static void UpdateKhachHang(KhachHangDTO kh)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"UPDATE KhachHang SET TENKH = N'{0}' WHERE SDT = N'{1}')", kh.TenKH, kh.sdt );
+            SqlCommand command = new SqlCommand(sql, con);
+
+            command.ExecuteNonQuery();
+            con.Close();
+        }
         public static void DeleteKhachHang(string SDT)
         {
             SqlConnection con = dbConnection.HamKetNoi();
@@ -63,6 +73,16 @@ namespace DAO
             SqlCommand command = new SqlCommand(sql, con);
 
             command.ExecuteNonQuery();
+            con.Close();
+        }
+        public static int GetMa(string manv)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"SELECT COUNT(*) FROM KHACHHANG WHERE SDT = N'{0}'", manv);
+            SqlCommand command = new SqlCommand(sql, con);
+            object count = command.ExecuteScalar();
+            return ((int)count);
             con.Close();
         }
     }

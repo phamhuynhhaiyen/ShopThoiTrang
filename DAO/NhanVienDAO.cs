@@ -32,26 +32,37 @@ namespace DAO
             return ((int)count);
             con.Close();
         }
-        public static void InsertNhanVien(NhanVienDTO nv)
+        public static string GetMKNhanVien(long manv)
         {
             SqlConnection con = dbConnection.HamKetNoi();
             con.Open();
-            string sql = string.Format(@"INSERT INTO NhanVien ([MaNV], [TenNV], [MaQuyen], [NgaySinh], [GioiTinh], [SDT]) VALUES({0}, N'{1}',{2},N'{3}', N'{4}', '{5}')", nv.MaNV, nv.TenNV, nv.MaQuyen, nv.NgaySinh, nv.GioiTinh, nv.SDT);
+            string sql = string.Format(@"SELECT MATKHAU FROM NHANVIEN WHERE [MaNV] = {0}", manv);
+            SqlCommand command = new SqlCommand(sql, con);
+            var count = command.ExecuteScalar();
+            return ((string)count);
+            con.Close();
+        }
+        public static void InsertNhanVien(long manv, string tennv, long maquyen, DateTime ngaysinh, string gioitinh, string sdt, string mk)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"INSERT INTO NhanVien ([MaNV], [TenNV], [MaQuyen], [NgaySinh], [GioiTinh], [SDT]) VALUES({0}, N'{1}',{2},N'{3}', N'{4}', '{5}', '{6}')", manv, tennv,maquyen,ngaysinh,gioitinh,sdt,mk);
             SqlCommand command = new SqlCommand(sql, con);
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
             con.Close();
         }
-        public static void UpdateNhanVien(NhanVienDTO nv)
+        public static void UpdateNhanVien(long manv, string tennv, long maquyen, DateTime ngaysinh, string gioitinh, string sdt)
         {
             SqlConnection con = dbConnection.HamKetNoi();
             con.Open();
-            string sql = string.Format(@"UPDATE NhanVien Set [TenNV] = N'{1}', [MaQuyen] = {2} ,[NgaySinh] = '{3}', [GioiTinh] =N'{4}', [SDT]='{5}' WHERE MaNV= {0}", nv.MaNV, nv.TenNV, nv.MaQuyen, nv.NgaySinh, nv.GioiTinh, nv.SDT);
+            string sql = string.Format(@"UPDATE NhanVien Set [TenNV] = N'{1}', [MaQuyen] = {2} ,[NgaySinh] = '{3}', [GioiTinh] =N'{4}', [SDT]='{5}' WHERE MaNV= {0}", manv, tennv, maquyen, ngaysinh, gioitinh, sdt);
             SqlCommand command = new SqlCommand(sql, con);
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
             con.Close();
         }
+        
         public static void DeleteNhanVien(long manv)
         {
             SqlConnection con = dbConnection.HamKetNoi();
@@ -88,6 +99,36 @@ namespace DAO
                 }
             }
             return listQuyen;
-        } 
+        }
+        public static string GetTenNhanVien(long manv)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"SELECT TENNV FROM NHANVIEN WHERE [MaNV] = {0}", manv);
+            SqlCommand command = new SqlCommand(sql, con);
+            var count = command.ExecuteScalar();
+            return ((string)count);
+            con.Close();
+        }
+        public static void UpdateTaiKhoan(long manv, string mk)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"UPDATE NhanVien Set [MatKhau] = N'{1}' WHERE MaNV= {0}", manv, mk);
+            SqlCommand command = new SqlCommand(sql, con);
+            command.CommandType = CommandType.Text;
+            command.ExecuteNonQuery();
+            con.Close();
+        }
+        public static long GetQuyenNhanVien(long manv)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@"SELECT MaQuyen FROM NHANVIEN WHERE [MaNV] = {0}", manv);
+            SqlCommand command = new SqlCommand(sql, con);
+            var count = command.ExecuteScalar();
+            return ((long)count);
+            con.Close();
+        }
     }
 }

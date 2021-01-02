@@ -8,7 +8,7 @@ namespace DTO
 {
     public class NhanVienDTO
     {
-        public NhanVienDTO(long maNV, string tenNV, long maQuyen, DateTime ngaySinh, string gioiTinh, string sDT)
+        public NhanVienDTO(long maNV, string tenNV, long maQuyen, DateTime ngaySinh, string gioiTinh, string sDT, string matKhau)
         {
             MaNV = maNV;
             TenNV = tenNV;
@@ -16,6 +16,7 @@ namespace DTO
             NgaySinh = ngaySinh;
             GioiTinh = gioiTinh;
             SDT = sDT;
+            MatKhau = matKhau;
         }
         public NhanVienDTO()
         {
@@ -27,5 +28,6 @@ namespace DTO
         public DateTime NgaySinh { get; set; }
         public string GioiTinh { get; set; }
         public string SDT { get; set; }
+        public string MatKhau { get; set; }
     }
 }

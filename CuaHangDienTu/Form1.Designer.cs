@@ -30,13 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelHeThong = new System.Windows.Forms.Panel();
-            this.btnDoiMatKhau = new System.Windows.Forms.Button();
-            this.btnHeThong = new System.Windows.Forms.Button();
             this.pnDanhMuc = new System.Windows.Forms.Panel();
             this.btnXemHoaDon = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -88,6 +85,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -110,9 +108,7 @@
             this.bunifuElipse12 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse13 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panelHeThong.SuspendLayout();
             this.pnDanhMuc.SuspendLayout();
             this.pnNhapHang.SuspendLayout();
             this.pnCen.SuspendLayout();
@@ -142,7 +138,6 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.flowLayoutPanel1.Controls.Add(this.panelHeThong);
             this.flowLayoutPanel1.Controls.Add(this.pnDanhMuc);
             this.flowLayoutPanel1.Controls.Add(this.btnBanHang);
             this.flowLayoutPanel1.Controls.Add(this.pnNhapHang);
@@ -152,55 +147,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(226, 572);
             this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // panelHeThong
-            // 
-            this.panelHeThong.Controls.Add(this.btnDoiMatKhau);
-            this.panelHeThong.Controls.Add(this.btnHeThong);
-            this.panelHeThong.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelHeThong.Location = new System.Drawing.Point(3, 3);
-            this.panelHeThong.MaximumSize = new System.Drawing.Size(214, 86);
-            this.panelHeThong.MinimumSize = new System.Drawing.Size(214, 50);
-            this.panelHeThong.Name = "panelHeThong";
-            this.panelHeThong.Size = new System.Drawing.Size(214, 50);
-            this.panelHeThong.TabIndex = 17;
-            // 
-            // btnDoiMatKhau
-            // 
-            this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
-            this.btnDoiMatKhau.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDoiMatKhau.FlatAppearance.BorderSize = 0;
-            this.btnDoiMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiMatKhau.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMatKhau.ForeColor = System.Drawing.Color.White;
-            this.btnDoiMatKhau.Location = new System.Drawing.Point(0, 51);
-            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            this.btnDoiMatKhau.Size = new System.Drawing.Size(214, 36);
-            this.btnDoiMatKhau.TabIndex = 3;
-            this.btnDoiMatKhau.Text = "   -   Phân quyền";
-            this.btnDoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiMatKhau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
-            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
-            // 
-            // btnHeThong
-            // 
-            this.btnHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnHeThong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHeThong.FlatAppearance.BorderSize = 0;
-            this.btnHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHeThong.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeThong.ForeColor = System.Drawing.Color.White;
-            this.btnHeThong.Image = global::CuaHangDienTu.Properties.Resources.sort_down_10px;
-            this.btnHeThong.Location = new System.Drawing.Point(0, 0);
-            this.btnHeThong.Name = "btnHeThong";
-            this.btnHeThong.Size = new System.Drawing.Size(214, 51);
-            this.btnHeThong.TabIndex = 2;
-            this.btnHeThong.Text = "Quản lí hệ thống";
-            this.btnHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHeThong.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnHeThong.UseVisualStyleBackColor = false;
-            this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
             // pnDanhMuc
             // 
@@ -212,7 +158,7 @@
             this.pnDanhMuc.Controls.Add(this.btnSanPham);
             this.pnDanhMuc.Controls.Add(this.btnDanhMuc);
             this.pnDanhMuc.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnDanhMuc.Location = new System.Drawing.Point(3, 59);
+            this.pnDanhMuc.Location = new System.Drawing.Point(3, 3);
             this.pnDanhMuc.MaximumSize = new System.Drawing.Size(214, 227);
             this.pnDanhMuc.MinimumSize = new System.Drawing.Size(214, 50);
             this.pnDanhMuc.Name = "pnDanhMuc";
@@ -335,7 +281,7 @@
             this.btnBanHang.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBanHang.ForeColor = System.Drawing.Color.White;
             this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanHang.Location = new System.Drawing.Point(3, 115);
+            this.btnBanHang.Location = new System.Drawing.Point(3, 59);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(214, 51);
             this.btnBanHang.TabIndex = 19;
@@ -351,7 +297,7 @@
             this.pnNhapHang.Controls.Add(this.btnPhieuNhap);
             this.pnNhapHang.Controls.Add(this.btnNhapHang);
             this.pnNhapHang.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnNhapHang.Location = new System.Drawing.Point(3, 172);
+            this.pnNhapHang.Location = new System.Drawing.Point(3, 116);
             this.pnNhapHang.MaximumSize = new System.Drawing.Size(214, 121);
             this.pnNhapHang.MinimumSize = new System.Drawing.Size(214, 50);
             this.pnNhapHang.Name = "pnNhapHang";
@@ -418,7 +364,7 @@
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongKe.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Location = new System.Drawing.Point(3, 228);
+            this.btnThongKe.Location = new System.Drawing.Point(3, 172);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(214, 51);
             this.btnThongKe.TabIndex = 25;
@@ -830,6 +776,17 @@
             this.panel1.Size = new System.Drawing.Size(898, 58);
             this.panel1.TabIndex = 0;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(527, 21);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(102, 18);
+            this.label21.TabIndex = 96;
+            this.label21.Text = "Đổi mật khẩu";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
@@ -866,11 +823,11 @@
             this.btnHuy.ColorContrastOnClick = 45;
             this.btnHuy.ColorContrastOnHover = 45;
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnHuy.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnHuy.CustomizableEdges = borderEdges1;
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHuy.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -891,24 +848,24 @@
             this.btnHuy.IndicateFocus = false;
             this.btnHuy.Location = new System.Drawing.Point(728, 9);
             this.btnHuy.Name = "btnHuy";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties3.BorderRadius = 35;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties3.ForeColor = System.Drawing.Color.White;
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.btnHuy.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties4.BorderRadius = 35;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.btnHuy.OnPressedState = stateProperties4;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties1.BorderRadius = 35;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btnHuy.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties2.BorderRadius = 35;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btnHuy.OnPressedState = stateProperties2;
             this.btnHuy.Size = new System.Drawing.Size(152, 37);
             this.btnHuy.TabIndex = 93;
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -940,7 +897,6 @@
             // timer1
             // 
             this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
@@ -1027,17 +983,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(527, 21);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(102, 18);
-            this.label21.TabIndex = 96;
-            this.label21.Text = "Đổi mật khẩu";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1053,7 +998,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panelHeThong.ResumeLayout(false);
             this.pnDanhMuc.ResumeLayout(false);
             this.pnNhapHang.ResumeLayout(false);
             this.pnCen.ResumeLayout(false);
@@ -1094,9 +1038,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panelHeThong;
-        private System.Windows.Forms.Button btnDoiMatKhau;
-        private System.Windows.Forms.Button btnHeThong;
         private System.Windows.Forms.Panel pnDanhMuc;
         private System.Windows.Forms.Button btnXemHoaDon;
         private System.Windows.Forms.Button btnNhanVien;

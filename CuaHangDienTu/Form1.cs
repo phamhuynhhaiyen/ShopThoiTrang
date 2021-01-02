@@ -51,30 +51,7 @@ namespace CuaHangDienTu
             timer2.Start();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (isCollapsed)
-            {
-                btnHeThong.Image = Resources.sort_up_10px;
-                
-                panelHeThong.Height += 10;
-                if (panelHeThong.Size == panelHeThong.MaximumSize)
-                {
-                    timer1.Stop();
-                    isCollapsed = false;
-                }
-            }
-            else
-            {
-                btnHeThong.Image = Resources.sort_down_10px;
-                panelHeThong.Height -= 10;
-                if (panelHeThong.Size == panelHeThong.MinimumSize)
-                {
-                    timer1.Stop();
-                    isCollapsed = true;
-                }
-            }
-        }
+        
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -212,13 +189,43 @@ namespace CuaHangDienTu
         {
             
             lbTen.Text = TenNV;
+            if(NhanVienBUS.GetQuyenNhanVien(MaNhanvien) == 1)
+            {
 
+            }
+            if (NhanVienBUS.GetQuyenNhanVien(MaNhanvien) == 2)
+            {
+
+            }
+            if (NhanVienBUS.GetQuyenNhanVien(MaNhanvien) == 3)
+            {
+                pnDanhMuc.Visible = false;
+                pnNhapHang.Visible = false;
+                btnThongKe.Visible = false;
+            }
+            if (NhanVienBUS.GetQuyenNhanVien(MaNhanvien) == 4)
+            {
+                btnNhanVien.Enabled = false;
+                btnKhachHang.Enabled = false;
+                btnThongKe.Visible = false;
+                btnBanHang.Visible = false;
+                btnXemHoaDon.Enabled = false;
+            }
+            if(NhanVienBUS.GetQuyenNhanVien(MaNhanvien) == 5)
+            {                
+                btnBanHang.Visible = false;
+                btnNhanVien.Enabled = false;
+                btnKhachHang.Enabled = false;
+                btnPhieuNhap.Enabled = false;
+                btnNCC.Enabled = false;
+                
+            }
 
         }
 
         private void label21_Click(object sender, EventArgs e)
         {
-            UC_DoiMK mk = new UC_DoiMK();
+            UC_DoiMK mk = new UC_DoiMK(MaNhanvien);
             AddControl(mk);
         }
     }

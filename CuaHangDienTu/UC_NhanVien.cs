@@ -64,20 +64,19 @@ namespace CuaHangDienTu
             long maquyen = long.Parse(cbbChucVu.SelectedValue.ToString());
             DateTime ns = dtpngaysinh.Value;
             string gt = cbbgioitinh.Text;
-            string sdt = txtsdt.Text;
-            NhanVienDTO nv = new NhanVienDTO(manv, tennv, maquyen, ns, gt, sdt);
+            string sdt = txtsdt.Text;            
             
             if (NhanVienBUS.GetNhanVien(manv) == 0)
             {
                 MessageBox.Show("Thêm thành công!");
-                NhanVienBUS.InsertNhanVien(nv);               
+                NhanVienBUS.InsertNhanVien(manv,tennv, maquyen, ns, gt, sdt, "123");               
             }
             else
             {
                 DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thay đổi?", "Thông báo", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {                    
-                    NhanVienBUS.UpdateNhanVien(nv);
+                    NhanVienBUS.UpdateNhanVien(manv, tennv, maquyen, ns, gt, sdt);
                 }
                     
             }

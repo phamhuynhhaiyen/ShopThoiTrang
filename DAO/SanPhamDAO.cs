@@ -15,7 +15,7 @@ namespace DAO
         {
             SqlConnection con = dbConnection.HamKetNoi();           
             con.Open();
-            SqlDataAdapter command = new SqlDataAdapter("SELECT MaSP, TenSP, TenLoai, TenNCC, SoLuongTon FROM SANPHAM, LoaiSanPham, NhaCungCap WHERE SanPham.MaLoai = LoaiSanPham.MaLoai AND NhaCungCap.MaNCC = SanPham.MaNCC", con);
+            SqlDataAdapter command = new SqlDataAdapter("SELECT MaSP, TenSP, TenLoai, TenNCC, SoLuongTon, GiaBan FROM SANPHAM, LoaiSanPham, NhaCungCap WHERE SanPham.MaLoai = LoaiSanPham.MaLoai AND NhaCungCap.MaNCC = SanPham.MaNCC", con);
             DataTable dataTable = new DataTable();
             command.Fill(dataTable);
             return dataTable;

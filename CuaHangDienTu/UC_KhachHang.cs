@@ -27,7 +27,21 @@ namespace CuaHangDienTu
         private void btnLuu_Click(object sender, EventArgs e)
         {
             KhachHangDTO kh = new KhachHangDTO(txtSDT.Text, txtTen.Text);
-            KhachHangBUS.InsertKhachHang(kh);
+            
+            if (KhachHangBUS.GetMa(txtSDT.Text) == 0)
+            {
+                MessageBox.Show("Thêm thành công!");
+                KhachHangBUS.InsertKhachHang(kh);
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thay đổi?", "Thông báo", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    KhachHangBUS.UpdateKhachHang(kh);
+                }
+
+            }
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)

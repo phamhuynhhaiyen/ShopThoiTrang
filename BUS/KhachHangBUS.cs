@@ -25,5 +25,13 @@ namespace BUS
         {
             DAO.KhachHangDAO.DeleteKhachHang(SDT);
         }
+        public static void UpdateKhachHang(KhachHangDTO kh)
+        {
+            DAO.KhachHangDAO.UpdateKhachHang(kh);
+        }
+        public static int GetMa(string manv)
+        {
+            return DAO.KhachHangDAO.GetMa(manv);
+        }
     }
 }
