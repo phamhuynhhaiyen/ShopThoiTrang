@@ -25,8 +25,33 @@ namespace CuaHangDienTu
             
             comboBox1.DataSource = HoaDonBUS.GetNamHD();
             comboBox1.ValueMember = "YEAR";
+            try
+            {
+                chart1.DataSource = HoaDonBUS.GetThangHD(int.Parse(comboBox1.SelectedValue.ToString()));
 
-          
+
+                chart1.Series["chartthu"].XValueMember = "thang";
+                chart1.Series["chartthu"].YValueMembers = "tien";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try
+            {
+                chart2.DataSource = PhieuNhapBUS.GetThangPN(int.Parse(comboBox1.SelectedValue.ToString()));
+
+
+                chart2.Series["chartchi"].XValueMember = "thangPN";
+                chart2.Series["chartchi"].YValueMembers = "tienPN";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            lbdoanhthu.Text = HoaDonBUS.TongDoanhThu(int.Parse(comboBox1.SelectedValue.ToString())).ToString();
+            lbChiPhi.Text = PhieuNhapBUS.TongChiPhi(int.Parse(comboBox1.SelectedValue.ToString())).ToString();
+
 
         }
 

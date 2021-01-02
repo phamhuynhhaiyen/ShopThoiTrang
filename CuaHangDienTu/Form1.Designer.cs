@@ -30,26 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnDanhMuc = new System.Windows.Forms.Panel();
-            this.btnXemHoaDon = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnNCC = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnDanhMuc = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
-            this.pnNhapHang = new System.Windows.Forms.Panel();
-            this.btnXemPN = new System.Windows.Forms.Button();
-            this.btnPhieuNhap = new System.Windows.Forms.Button();
             this.btnNhapHang = new System.Windows.Forms.Button();
+            this.pnDM = new System.Windows.Forms.Panel();
             this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnXemPN = new System.Windows.Forms.Button();
+            this.btnXemHD = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.pnCen = new System.Windows.Forms.Panel();
             this.pnCenter = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBCTK = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -73,10 +73,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -110,10 +106,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnDanhMuc.SuspendLayout();
-            this.pnNhapHang.SuspendLayout();
+            this.pnDM.SuspendLayout();
             this.pnCen.SuspendLayout();
             this.pnCenter.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.btnBCTK.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -125,7 +121,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -140,8 +135,8 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.flowLayoutPanel1.Controls.Add(this.pnDanhMuc);
             this.flowLayoutPanel1.Controls.Add(this.btnBanHang);
-            this.flowLayoutPanel1.Controls.Add(this.pnNhapHang);
-            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
+            this.flowLayoutPanel1.Controls.Add(this.btnNhapHang);
+            this.flowLayoutPanel1.Controls.Add(this.pnDM);
             this.flowLayoutPanel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-8, 140);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -151,7 +146,6 @@
             // pnDanhMuc
             // 
             this.pnDanhMuc.BackColor = System.Drawing.Color.White;
-            this.pnDanhMuc.Controls.Add(this.btnXemHoaDon);
             this.pnDanhMuc.Controls.Add(this.btnNhanVien);
             this.pnDanhMuc.Controls.Add(this.btnKhachHang);
             this.pnDanhMuc.Controls.Add(this.btnNCC);
@@ -159,28 +153,11 @@
             this.pnDanhMuc.Controls.Add(this.btnDanhMuc);
             this.pnDanhMuc.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnDanhMuc.Location = new System.Drawing.Point(3, 3);
-            this.pnDanhMuc.MaximumSize = new System.Drawing.Size(214, 227);
+            this.pnDanhMuc.MaximumSize = new System.Drawing.Size(214, 193);
             this.pnDanhMuc.MinimumSize = new System.Drawing.Size(214, 50);
             this.pnDanhMuc.Name = "pnDanhMuc";
             this.pnDanhMuc.Size = new System.Drawing.Size(214, 50);
             this.pnDanhMuc.TabIndex = 18;
-            // 
-            // btnXemHoaDon
-            // 
-            this.btnXemHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
-            this.btnXemHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnXemHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnXemHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXemHoaDon.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnXemHoaDon.Location = new System.Drawing.Point(0, 195);
-            this.btnXemHoaDon.Name = "btnXemHoaDon";
-            this.btnXemHoaDon.Size = new System.Drawing.Size(214, 36);
-            this.btnXemHoaDon.TabIndex = 8;
-            this.btnXemHoaDon.Text = "   -   Xem hóa đơn";
-            this.btnXemHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXemHoaDon.UseVisualStyleBackColor = false;
-            this.btnXemHoaDon.Click += new System.EventHandler(this.btnXemHoaDon_Click);
             // 
             // btnNhanVien
             // 
@@ -290,19 +267,56 @@
             this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
-            // pnNhapHang
+            // btnNhapHang
             // 
-            this.pnNhapHang.BackColor = System.Drawing.Color.White;
-            this.pnNhapHang.Controls.Add(this.btnXemPN);
-            this.pnNhapHang.Controls.Add(this.btnPhieuNhap);
-            this.pnNhapHang.Controls.Add(this.btnNhapHang);
-            this.pnNhapHang.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnNhapHang.Location = new System.Drawing.Point(3, 116);
-            this.pnNhapHang.MaximumSize = new System.Drawing.Size(214, 121);
-            this.pnNhapHang.MinimumSize = new System.Drawing.Size(214, 50);
-            this.pnNhapHang.Name = "pnNhapHang";
-            this.pnNhapHang.Size = new System.Drawing.Size(214, 50);
-            this.pnNhapHang.TabIndex = 24;
+            this.btnNhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btnNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhapHang.FlatAppearance.BorderSize = 0;
+            this.btnNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhapHang.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
+            this.btnNhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapHang.Location = new System.Drawing.Point(3, 116);
+            this.btnNhapHang.Name = "btnNhapHang";
+            this.btnNhapHang.Size = new System.Drawing.Size(214, 51);
+            this.btnNhapHang.TabIndex = 26;
+            this.btnNhapHang.Text = "     Quản lí nhập hàng";
+            this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapHang.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnNhapHang.UseVisualStyleBackColor = false;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click_1);
+            // 
+            // pnDM
+            // 
+            this.pnDM.BackColor = System.Drawing.Color.White;
+            this.pnDM.Controls.Add(this.btnThongKe);
+            this.pnDM.Controls.Add(this.btnXemPN);
+            this.pnDM.Controls.Add(this.btnXemHD);
+            this.pnDM.Controls.Add(this.button5);
+            this.pnDM.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnDM.Location = new System.Drawing.Point(3, 173);
+            this.pnDM.MaximumSize = new System.Drawing.Size(214, 157);
+            this.pnDM.MinimumSize = new System.Drawing.Size(214, 50);
+            this.pnDM.Name = "pnDM";
+            this.pnDM.Size = new System.Drawing.Size(214, 50);
+            this.pnDM.TabIndex = 27;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKe.FlatAppearance.BorderSize = 0;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 123);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(214, 36);
+            this.btnThongKe.TabIndex = 6;
+            this.btnThongKe.Text = "   -   Thống kê";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_2);
             // 
             // btnXemPN
             // 
@@ -315,62 +329,48 @@
             this.btnXemPN.Location = new System.Drawing.Point(0, 87);
             this.btnXemPN.Name = "btnXemPN";
             this.btnXemPN.Size = new System.Drawing.Size(214, 36);
-            this.btnXemPN.TabIndex = 4;
+            this.btnXemPN.TabIndex = 5;
             this.btnXemPN.Text = "   -   Xem phiếu nhập";
             this.btnXemPN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXemPN.UseVisualStyleBackColor = false;
             this.btnXemPN.Click += new System.EventHandler(this.btnXemPN_Click);
             // 
-            // btnPhieuNhap
+            // btnXemHD
             // 
-            this.btnPhieuNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
-            this.btnPhieuNhap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhieuNhap.FlatAppearance.BorderSize = 0;
-            this.btnPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhieuNhap.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.btnPhieuNhap.Location = new System.Drawing.Point(0, 51);
-            this.btnPhieuNhap.Name = "btnPhieuNhap";
-            this.btnPhieuNhap.Size = new System.Drawing.Size(214, 36);
-            this.btnPhieuNhap.TabIndex = 3;
-            this.btnPhieuNhap.Text = "   -   Tạo phiếu nhập mới";
-            this.btnPhieuNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
+            this.btnXemHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+            this.btnXemHD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnXemHD.FlatAppearance.BorderSize = 0;
+            this.btnXemHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemHD.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemHD.ForeColor = System.Drawing.Color.White;
+            this.btnXemHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXemHD.Location = new System.Drawing.Point(0, 51);
+            this.btnXemHD.Name = "btnXemHD";
+            this.btnXemHD.Size = new System.Drawing.Size(214, 36);
+            this.btnXemHD.TabIndex = 4;
+            this.btnXemHD.Text = "   -   Xem hóa đơn";
+            this.btnXemHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXemHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXemHD.UseVisualStyleBackColor = false;
+            this.btnXemHD.Click += new System.EventHandler(this.btnXemHD_Click);
             // 
-            // btnNhapHang
+            // button5
             // 
-            this.btnNhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNhapHang.FlatAppearance.BorderSize = 0;
-            this.btnNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhapHang.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
-            this.btnNhapHang.Image = global::CuaHangDienTu.Properties.Resources.sort_down_10px;
-            this.btnNhapHang.Location = new System.Drawing.Point(0, 0);
-            this.btnNhapHang.Name = "btnNhapHang";
-            this.btnNhapHang.Size = new System.Drawing.Size(214, 51);
-            this.btnNhapHang.TabIndex = 2;
-            this.btnNhapHang.Text = "  Quản lí nhập hàng";
-            this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNhapHang.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnNhapHang.UseVisualStyleBackColor = false;
-            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btnThongKe.FlatAppearance.BorderSize = 0;
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Location = new System.Drawing.Point(3, 172);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(214, 51);
-            this.btnThongKe.TabIndex = 25;
-            this.btnThongKe.Text = "Báo cáo thống kê";
-            this.btnThongKe.UseVisualStyleBackColor = false;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::CuaHangDienTu.Properties.Resources.sort_down_10px;
+            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(214, 51);
+            this.button5.TabIndex = 2;
+            this.button5.Text = " Thống kê";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pnCen
             // 
@@ -384,22 +384,22 @@
             // 
             // pnCenter
             // 
-            this.pnCenter.Controls.Add(this.panel3);
+            this.pnCenter.Controls.Add(this.btnBCTK);
             this.pnCenter.Location = new System.Drawing.Point(19, 79);
             this.pnCenter.Name = "pnCenter";
             this.pnCenter.Size = new System.Drawing.Size(898, 606);
             this.pnCenter.TabIndex = 1;
             // 
-            // panel3
+            // btnBCTK
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(895, 603);
-            this.panel3.TabIndex = 1;
+            this.btnBCTK.BackColor = System.Drawing.Color.White;
+            this.btnBCTK.Controls.Add(this.panel4);
+            this.btnBCTK.Controls.Add(this.pictureBox5);
+            this.btnBCTK.Controls.Add(this.panel2);
+            this.btnBCTK.Location = new System.Drawing.Point(0, 0);
+            this.btnBCTK.Name = "btnBCTK";
+            this.btnBCTK.Size = new System.Drawing.Size(895, 603);
+            this.btnBCTK.TabIndex = 1;
             // 
             // panel4
             // 
@@ -410,7 +410,6 @@
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(429, 22);
             this.panel4.Name = "panel4";
@@ -644,50 +643,6 @@
             this.label10.TabIndex = 50;
             this.label10.Text = "Trần Quang Trường";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(235)))), ((int)(((byte)(193)))));
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(228, 437);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(192, 173);
-            this.panel5.TabIndex = 52;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(21, 96);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 22);
-            this.label8.TabIndex = 54;
-            this.label8.Text = "35.635.264";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(20, 62);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
-            this.label7.TabIndex = 53;
-            this.label7.Text = "hôm nay";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(20, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 20);
-            this.label6.TabIndex = 52;
-            this.label6.Text = "Doanh thu ";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -823,11 +778,11 @@
             this.btnHuy.ColorContrastOnClick = 45;
             this.btnHuy.ColorContrastOnHover = 45;
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnHuy.CustomizableEdges = borderEdges1;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btnHuy.CustomizableEdges = borderEdges11;
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHuy.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -848,24 +803,24 @@
             this.btnHuy.IndicateFocus = false;
             this.btnHuy.Location = new System.Drawing.Point(728, 9);
             this.btnHuy.Name = "btnHuy";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties1.BorderRadius = 35;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.btnHuy.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties2.BorderRadius = 35;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.btnHuy.OnPressedState = stateProperties2;
+            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties21.BorderRadius = 35;
+            stateProperties21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties21.BorderThickness = 1;
+            stateProperties21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties21.ForeColor = System.Drawing.Color.White;
+            stateProperties21.IconLeftImage = null;
+            stateProperties21.IconRightImage = null;
+            this.btnHuy.onHoverState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties22.BorderRadius = 35;
+            stateProperties22.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties22.BorderThickness = 1;
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            stateProperties22.ForeColor = System.Drawing.Color.White;
+            stateProperties22.IconLeftImage = null;
+            stateProperties22.IconRightImage = null;
+            this.btnHuy.OnPressedState = stateProperties22;
             this.btnHuy.Size = new System.Drawing.Size(152, 37);
             this.btnHuy.TabIndex = 93;
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -897,6 +852,7 @@
             // timer1
             // 
             this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
@@ -921,7 +877,6 @@
             // timer3
             // 
             this.timer3.Interval = 35;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // bunifuElipse4
             // 
@@ -936,7 +891,7 @@
             // bunifuElipse6
             // 
             this.bunifuElipse6.ElipseRadius = 35;
-            this.bunifuElipse6.TargetControl = this.panel3;
+            this.bunifuElipse6.TargetControl = this.btnBCTK;
             // 
             // bunifuElipse7
             // 
@@ -946,7 +901,6 @@
             // bunifuElipse8
             // 
             this.bunifuElipse8.ElipseRadius = 65;
-            this.bunifuElipse8.TargetControl = this.panel5;
             // 
             // bunifuElipse9
             // 
@@ -999,10 +953,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pnDanhMuc.ResumeLayout(false);
-            this.pnNhapHang.ResumeLayout(false);
+            this.pnDM.ResumeLayout(false);
             this.pnCen.ResumeLayout(false);
             this.pnCenter.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.btnBCTK.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1020,8 +974,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1039,7 +991,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnDanhMuc;
-        private System.Windows.Forms.Button btnXemHoaDon;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnKhachHang;
         private System.Windows.Forms.Button btnNCC;
@@ -1056,18 +1007,13 @@
         private System.Windows.Forms.Panel pnCenter;
         private System.Windows.Forms.Label lbTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pnNhapHang;
-        private System.Windows.Forms.Button btnXemPN;
-        private System.Windows.Forms.Button btnPhieuNhap;
-        private System.Windows.Forms.Button btnNhapHang;
-        private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel btnBCTK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
@@ -1078,11 +1024,7 @@
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
@@ -1112,6 +1054,12 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btnNhapHang;
+        private System.Windows.Forms.Panel pnDM;
+        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnXemPN;
+        private System.Windows.Forms.Button btnXemHD;
+        private System.Windows.Forms.Button button5;
     }
 }
 

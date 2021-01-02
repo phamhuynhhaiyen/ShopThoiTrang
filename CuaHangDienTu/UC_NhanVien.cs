@@ -99,5 +99,9 @@ namespace CuaHangDienTu
             }
         }
 
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            BUS.Bus_Thonke.XuatExcel(dgvNhanVien,3);
+        }
     }
 }

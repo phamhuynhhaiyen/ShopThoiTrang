@@ -21,17 +21,18 @@ namespace CuaHangDienTu
 
         private void btnlogin_Click(object sender, EventArgs e)
         {           
-            if(NhanVienBUS.GetNhanVien(long.Parse(txtUsername.Text)) != 0)
+           if(NhanVienBUS.GetNhanVien(long.Parse(txtUsername.Text), txtPassword.Text) != 0)
             {
-                if(txtPassword.Text == NhanVienBUS.GetMKNhanVien(long.Parse(txtUsername.Text)))
-                {
+
+               // if (txtPassword.Text == NhanVienBUS.GetMKNhanVien(long.Parse(txtUsername.Text)))
+              //  {
                     MessageBox.Show("Đăng nhập thành công!");
                     string TenNV = NhanVienBUS.GetTenNhanVien(long.Parse(txtUsername.Text));
                     Form1 frm = new Form1(long.Parse(txtUsername.Text), TenNV);
                     frm.Show();
-                }
+               // }
             }
-            else { MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ!"); }
+           else { MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ!"); }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -41,5 +41,10 @@ namespace CuaHangDienTu
             DateTime NgayLap = dateTimePicker1.Value;
             dgvHD.DataSource = PhieuNhapBUS.GetPhieuTheoNgay(NgayLap);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BUS.Bus_Thonke.XuatExcel(dgvHD, 1);
+        }
     }
 }

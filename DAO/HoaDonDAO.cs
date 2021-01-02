@@ -115,6 +115,16 @@ namespace DAO
             var tong = command.ExecuteScalar();
             return (long)tong;
         }
-        
+        public static DataTable GetThangHDDGV(int nam)
+        {
+            SqlConnection con = dbConnection.HamKetNoi();
+            con.Open();
+            string sql = string.Format(@" SELECT MONTH(HoaDon.NgayLap) as Thang , sum(HoaDon.TongTien) as Tien  FROM  HoaDon  WHERE  YEAR(HoaDon.NgayLap) = {0} group by MONTH(HoaDon.NgayLap) ", nam);
+            SqlDataAdapter command = new SqlDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            command.Fill(dataTable);
+            return dataTable;           
+        }
+
     }
 }

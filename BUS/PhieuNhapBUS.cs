@@ -51,5 +51,9 @@ namespace BUS
         {
             return DAO.PhieuNhapDAO.TongChiPhi(nam);
         }
+        public static DataTable GetThangPNDGV(int nam)
+        {
+            return PhieuNhapDAO.GetThangPNDGV(nam);
+        }
     }
 }

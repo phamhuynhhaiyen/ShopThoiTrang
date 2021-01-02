@@ -9,3 +9,4 @@ C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cac
 C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.dll
 C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.pdb
+C:\Users\hp\Desktop\ShopThoiTrang\BUS\obj\Debug\BUS.csproj.ResolveComReference.cache

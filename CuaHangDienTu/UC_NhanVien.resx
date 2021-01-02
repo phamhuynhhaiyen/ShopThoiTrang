@@ -147,6 +147,18 @@
   <metadata name="SDT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGMAAAAlCAYAAABWOlfkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFqSURBVGhD7ZuhTsRAEIYrkUgkEskjIJFI3LQoJBJ5jkdA
+        8hiVm61BIpEne20vqTx5zByTNFfmEhK6myH5/+QTvcxWzJfttslcgfyT0BjOaQg31RBX4G9IH6kLF9ra
+        34cXlXyDNbMHi9Nyf5+11acjO4GL69likII+vlMbLrX1P8NFEJGXD1qHM23/FNqER6MYJOZh27yogilV
+        F0erGKRHjgfVwLuCn11WEciDvGmpisMj6s4qAnmgPjypisPBLe/CZiHIwkpVQIYDIMMRkOEIyHAEZDgC
+        MhwBGY6ADEdAhiMgwxGQ4QjIcARkOAIyHAEZjoAMR0CGIyDDEZMMnSC0ikAGjiYM+eLaKgJ5kIEQVfEd
+        /nE3LwJ54M1wPBBdbptXqxAkp1YFU2Tms+rip1EM0iET6fbfBPTsaGcLQAq6OHK/b7X1dmTusxyaN/MG
+        YCnqkzvCiszf6tinfIOABaA+3NMQrrTFiN8UxRcxlkL/MBm9MwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnHuy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGMAAAAlCAYAAABWOlfkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

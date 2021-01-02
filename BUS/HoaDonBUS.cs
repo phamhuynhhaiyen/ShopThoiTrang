@@ -51,8 +51,11 @@ namespace BUS
         {
             return DAO.HoaDonDAO.TongDoanhThu(nam);
         }
-        
 
+        public static DataTable GetThangHDDGV(int nam)
+        {
+            return DAO.HoaDonDAO.GetThangHDDGV(nam);
+        }
 
     }
 }

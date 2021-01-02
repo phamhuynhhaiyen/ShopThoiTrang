@@ -23,8 +23,6 @@ namespace CuaHangDienTu
             frmLoaiSP frm = new frmLoaiSP();
             frm.Show();
         }
-        
-        
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
             dgvNhanVien.DataSource = SanPhamBUS.GetAllSanPham();
@@ -55,6 +53,11 @@ namespace CuaHangDienTu
         {
             SanPhamBUS.DeleteSP(masp);
             dgvNhanVien.DataSource = SanPhamBUS.GetAllSanPham();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            BUS.Bus_Thonke.XuatExcel(dgvNhanVien, 4);
         }
     }
 }

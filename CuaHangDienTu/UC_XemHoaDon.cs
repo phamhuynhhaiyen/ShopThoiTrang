@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CuaHangDienTu.Report;
+using Microsoft.Office.Interop.Excel;
 
 namespace CuaHangDienTu
 {
@@ -45,6 +46,23 @@ namespace CuaHangDienTu
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
+        DateTime t2 = DateTime.Now;
+        DateTime t1 = DateTime.Now.AddMonths(-1) ; 
+       
+       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            BUS.Bus_Thonke.XuatExcel(dgvHD,3);
+
+
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

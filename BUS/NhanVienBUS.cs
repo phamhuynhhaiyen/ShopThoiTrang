@@ -15,6 +15,10 @@ namespace BUS
         {
             return NhanVienDAO.GetAllNhanVien();
         }
+        public static int GetNhanVien(long manv , string mk)
+        {
+            return NhanVienDAO.GetNhanVien(manv,mk);
+        }
         public static int GetNhanVien(long manv)
         {
             return NhanVienDAO.GetNhanVien(manv);

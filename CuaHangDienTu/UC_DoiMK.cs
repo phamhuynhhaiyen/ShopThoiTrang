@@ -30,7 +30,7 @@ namespace CuaHangDienTu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (txtMKC.Text != NhanVienBUS.GetMKNhanVien(manhanvien))
+          if (NhanVienBUS.GetNhanVien(manhanvien, txtMKC.Text) == 0)
             {
                 label4.Visible = true;
             }
@@ -56,6 +56,11 @@ namespace CuaHangDienTu
 
 
             }
+
+        }
+
+        private void txtMKC_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
