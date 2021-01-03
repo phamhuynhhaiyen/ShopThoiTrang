@@ -27,7 +27,7 @@ namespace CuaHangDienTu
         {
             frmThemSP frm = new frmThemSP();
             frm.Show();
-                 
+                
         }
 
         public void LoadSP()
@@ -50,6 +50,7 @@ namespace CuaHangDienTu
         private void cbbMaSP_SelectionChangeCommitted(object sender, EventArgs e)
         {
             long masp = long.Parse(cbbMaSP.SelectedValue.ToString());
+            
             //cbbTen.Text = SanPhamBUS.GetTenSP(masp);
         }
 
@@ -64,6 +65,13 @@ namespace CuaHangDienTu
         {
             frmPhieuNhap frm = new frmPhieuNhap(maphieu);
             frm.Show();
+        }
+
+        private void cbbMaSP_Click(object sender, EventArgs e)
+        {
+            cbbMaSP.DataSource = SanPhamBUS.GetAllSanPham();
+            cbbMaSP.ValueMember = "MaSP";
+            cbbMaSP.DisplayMember = "TenSP";
         }
     }
 }

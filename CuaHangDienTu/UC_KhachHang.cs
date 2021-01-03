@@ -56,8 +56,13 @@ namespace CuaHangDienTu
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            KhachHangBUS.DeleteKhachHang(txtSDT.Text);
-            dgvNhanVien.DataSource = KhachHangBUS.GetAllKH();
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thay đổi?", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                KhachHangBUS.DeleteKhachHang(txtSDT.Text);
+                dgvNhanVien.DataSource = KhachHangBUS.GetAllKH();
+            }
+               
         }
     }
 }

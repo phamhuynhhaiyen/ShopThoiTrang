@@ -154,7 +154,7 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(197)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(235)))), ((int)(((byte)(193)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvNhapHang.DefaultCellStyle = dataGridViewCellStyle3;
@@ -167,6 +167,7 @@
             this.dgvNhapHang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvNhapHang.RowHeadersWidth = 51;
             this.dgvNhapHang.RowTemplate.Height = 24;
+            this.dgvNhapHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhapHang.Size = new System.Drawing.Size(892, 411);
             this.dgvNhapHang.TabIndex = 121;
             // 
@@ -316,6 +317,7 @@
             this.cbbMaSP.Size = new System.Drawing.Size(133, 24);
             this.cbbMaSP.TabIndex = 125;
             this.cbbMaSP.SelectionChangeCommitted += new System.EventHandler(this.cbbMaSP_SelectionChangeCommitted);
+            this.cbbMaSP.Click += new System.EventHandler(this.cbbMaSP_Click);
             // 
             // label2
             // 
